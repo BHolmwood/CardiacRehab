@@ -88,6 +88,9 @@
     </ApplicationDefinition>
     <Compile Include="BioSocket.cs" />
     <Compile Include="ClinicianSockets.cs" />
+    <Compile Include="DoctorWindowPrototype.xaml.cs">
+      <DependentUpon>DoctorWindowPrototype.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HttpRequestClass.cs" />
     <Compile Include="IHealthClass.cs" />
     <Compile Include="PatientList.xaml.cs">
@@ -99,6 +102,10 @@
     <Compile Include="UdpBiosocketClient.cs" />
     <Compile Include="UnitySocket.cs" />
     <Page Include="DoctorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DoctorWindowPrototype.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
