@@ -118,8 +118,8 @@ namespace CardiacRehab
         private void StartApplication()
         {
             // textbox in the UI for testing purposes
-            //_writer = new TextBoxStreamWriter(txtMessage);
-            //Console.SetOut(_writer);
+            _writer = new TextBoxStreamWriter(txtMessage);
+            Console.SetOut(_writer);
 
             //ihealth = new IHealthClass(patientIndex, this);
             //ihealth.GetCode();
