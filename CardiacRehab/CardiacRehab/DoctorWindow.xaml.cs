@@ -381,9 +381,10 @@ namespace CardiacRehab
         private void ExpandedScreenView(int patient)
         {
             //fullscreenview = new FullScreenWindow(userid, patient, this);
-            //this.Hide();
-            //fullscreenview.Show();
-            //fullscreenview.Closed += new EventHandler(ShowDoctorScreen);
+            fullscreenview = new FullScreenWindow(0, patient, this, 0);
+            this.Hide();
+            fullscreenview.Show();
+            fullscreenview.Closed += new EventHandler(ShowDoctorScreen);
         }
 
         /// <summary>
