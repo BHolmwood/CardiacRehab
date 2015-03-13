@@ -84,26 +84,80 @@
         <Grid HorizontalAlignment="Left" Height="238" Margin="452,28,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
             <Image HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="340"/>
             <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="expand1_Copy" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
+                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
+            </Button>
+            <Button x:Name="mute1_Copy" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,13,125" Background="#FFE8DEDE">
+                <Image x:Name="muteIcon2" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+            </Button>
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo2_Copy" Click="memo2_Click" Margin="358,18,14,182" Background="#FFE8DEDE">
+                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+            </Button>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="238" Margin="891,28,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
             <Image HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="340"/>
             <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="expand1_Copy1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
+                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
+            </Button>
+            <Button x:Name="mute1_Copy1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,13,125" Background="#FFE8DEDE">
+                <Image x:Name="muteIcon3" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+            </Button>
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo2_Copy1" Click="memo2_Click" Margin="358,18,14,182" Background="#FFE8DEDE">
+                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+            </Button>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="238" Margin="891,351,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
             <Image HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="340"/>
             <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="expand1_Copy4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
+                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
+            </Button>
+            <Button x:Name="mute1_Copy4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,13,125" Background="#FFE8DEDE">
+                <Image x:Name="muteIcon6" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+            </Button>
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo2_Copy4" Click="memo2_Click" Margin="358,18,14,182" Background="#FFE8DEDE">
+                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+            </Button>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="238" Margin="452,351,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
             <Image HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="340"/>
             <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="expand1_Copy3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
+                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
+            </Button>
+            <Button x:Name="mute1_Copy3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,13,125" Background="#FFE8DEDE">
+                <Image x:Name="muteIcon5" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+            </Button>
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo2_Copy3" Click="memo2_Click" Margin="358,18,14,182" Background="#FFE8DEDE">
+                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+            </Button>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="238" Margin="10,351,0,0" VerticalAlignment="Top" Width="410" Background="#FFE5EAF0">
             <Image HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="340"/>
             <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="expand1_Copy2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,14,70" Background="#FFE8DEDE">
+                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
+            </Button>
+            <Button x:Name="mute1_Copy2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,14,125" Background="#FFE8DEDE">
+                <Image x:Name="muteIcon4" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+            </Button>
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo2_Copy2" Click="memo2_Click" Margin="358,18,15,182" Background="#FFE8DEDE">
+                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+            </Button>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="238" Margin="10,28,0,0" VerticalAlignment="Top" Width="410" Background="#FFE5EAF0">
             <Image HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="340"/>
             <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="mute1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,14,125" Background="#FFE8DEDE">
+                <Image x:Name="muteIcon1" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+            </Button>
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo2" Click="memo2_Click" Margin="358,18,15,182" Background="#FFE8DEDE">
+                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+            </Button>
+            <Button x:Name="expand1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,14,70" Background="#FFE8DEDE">
+                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
+            </Button>
         </Grid>
     </Grid>
 </Window>
