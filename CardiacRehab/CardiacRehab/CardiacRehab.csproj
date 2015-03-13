@@ -88,8 +88,15 @@
     </ApplicationDefinition>
     <Compile Include="BioSocket.cs" />
     <Compile Include="ClinicianSockets.cs" />
+    <Compile Include="DoctorWindow.xaml.cs">
+      <DependentUpon>DoctorWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DoctorWindowPrototype.xaml.cs">
       <DependentUpon>DoctorWindowPrototype.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FullScreenWindow.xaml.cs">
+      <DependentUpon>FullScreenWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="HttpRequestClass.cs" />
     <Compile Include="IHealthClass.cs" />
@@ -112,12 +119,12 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DoctorWindowPrototype.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="FullScreenWindow.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Login.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -128,13 +135,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DatabaseClass.cs" />
-    <Compile Include="DoctorWindow.xaml.cs">
-      <DependentUpon>DoctorWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ECGPointCollection.cs" />
-    <Compile Include="FullScreenWindow.xaml.cs">
-      <DependentUpon>FullScreenWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>
