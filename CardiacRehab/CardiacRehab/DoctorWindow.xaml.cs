@@ -435,7 +435,6 @@ namespace CardiacRehab
 
         #endregion
 
-
         #region Connect button triggers
         private void connect1_Click(object sender, RoutedEventArgs e)
         {
