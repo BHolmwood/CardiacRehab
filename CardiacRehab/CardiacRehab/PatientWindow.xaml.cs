@@ -111,7 +111,7 @@ namespace CardiacRehab
         private void PatientWindow_Loaded(object sender, RoutedEventArgs e)
         {
 
-            //InitializeKinect();
+            InitializeKinect();
             //InitializeAudio();
         }
 
@@ -137,42 +137,42 @@ namespace CardiacRehab
 
             ConnectToDoctor();
 
-            // later will have different port for different devices 
+            ////later will have different port for different devices 
             //Console.WriteLine("initializing 4444");
             //otherSocket = new BioSocket(wirelessIP, 4444, patientIndex, user, sessionID, this);
-            ////Thread otherThread = new Thread(new ThreadStart(otherSocket.InitializeBioSockets));
-            ////otherThread.Start();
+            //Thread otherThread = new Thread(new ThreadStart(otherSocket.InitializeBioSockets));
+            //otherThread.Start();
             //otherSocket.InitializeBioSockets();
 
             //Console.WriteLine("initializing 4445");
             //bpSocket = new BioSocket(wirelessIP, 4445, patientIndex, user, sessionID, this);
-            ////Thread bpThread = new Thread(new ThreadStart(bpSocket.InitializeBioSockets));
-            ////bpThread.Start();
+            //Thread bpThread = new Thread(new ThreadStart(bpSocket.InitializeBioSockets));
+            //bpThread.Start();
             //bpSocket.InitializeBioSockets();
 
             //Console.WriteLine("initializing 4446");
             //ecgSocket = new BioSocket(wirelessIP, 4446, patientIndex, user, sessionID, this);
-            ////Thread ecgThread = new Thread(new ThreadStart(ecgSocket.InitializeBioSockets));
-            ////ecgThread.Start();
+            //Thread ecgThread = new Thread(new ThreadStart(ecgSocket.InitializeBioSockets));
+            //ecgThread.Start();
             //ecgSocket.InitializeBioSockets();
 
-            //Console.WriteLine("initializing 4447");
-            //bikeSocket = new BioSocket(wirelessIP, 4447, patientIndex, user, sessionID, this);
-            ////Thread bikeThread = new Thread(new ThreadStart(bikeSocket.InitializeBioSockets));
-            ////bikeThread.Start();
-            //bikeSocket.InitializeBioSockets();
-            //Console.WriteLine ("DONE");
+            Console.WriteLine("initializing 4447");
+            bikeSocket = new BioSocket(wirelessIP, 4447, patientIndex, user, sessionID, this);
+            Thread bikeThread = new Thread(new ThreadStart(bikeSocket.InitializeBioSockets));
+            bikeThread.Start();
+            bikeSocket.InitializeBioSockets();
+            Console.WriteLine ("DONE");
 
-            // Working for biodata + bike with UDP
-            //Console.WriteLine("connecting to: " + wirelessIP);
+            //Working for biodata + bike with UDP
+            Console.WriteLine("connecting to: " + wirelessIP);
             //hrUdpSocket = new UdpBiosocket(wirelessIP, 4444, patientIndex, user, sessionID, this);
             //hrUdpSocket.InitializeBioSockets();
             //bpUdpSocket = new UdpBiosocket(wirelessIP, 4445, patientIndex, user, sessionID, this);
             //bpUdpSocket.InitializeBioSockets();
             //ecgUdpSocket = new UdpBiosocket(wirelessIP, 4446, patientIndex, user, sessionID, this);
             //ecgUdpSocket.InitializeBioSockets();
-            //bikeUdpSocket = new UdpBiosocket(wirelessIP, 4447, patientIndex, user, sessionID, this);
-            //bikeUdpSocket.InitializeBioSockets();
+            bikeUdpSocket = new UdpBiosocket(wirelessIP, 4447, patientIndex, user, sessionID, this);
+            bikeUdpSocket.InitializeBioSockets();
 
 
             // Disable this function if testing with InitTimer()
@@ -413,7 +413,7 @@ namespace CardiacRehab
 
         //#endregion
 
-        //#region Process data sent from the phone
+        #region Process data sent from the phone
 
         public void ProcessBioSocketData(String tmp, int socketPortNumber)
         {
@@ -530,9 +530,9 @@ namespace CardiacRehab
         //    }
 
         //}
-        //#endregion
+        #endregion
 
-        //#region socket connection with the doctor
+        #region socket connection with the doctor
 
         private void ConnectToDoctor()
         {
@@ -574,122 +574,122 @@ namespace CardiacRehab
             return newsocket;
         }
 
-        //#endregion
+        #endregion
 
-        //#region Kinect
-        //private void InitializeKinect()
-        //{
-        //    this.sensorChooser = new KinectSensorChooser();
-        //    this.sensorChooser.KinectChanged += sensorChooser_KinectChanged;
-        //    this.sensorChooserUi.KinectSensorChooser = this.sensorChooser;
-        //    this.sensorChooser.Start();
+        #region Kinect
+        private void InitializeKinect()
+        {
+            this.sensorChooser = new KinectSensorChooser();
+            this.sensorChooser.KinectChanged += sensorChooser_KinectChanged;
+            this.sensorChooserUi.KinectSensorChooser = this.sensorChooser;
+            this.sensorChooser.Start();
 
-        //    // Don't try this unless there is a kinect
-        //    if (this.sensorChooser.Kinect != null)
-        //    {
-        //        //trying to get the video from the clinician -- this can fail
-        //        _videoClient = new ColorClient();
-        //        _videoClient.ColorFrameReady += _videoClient_ColorFrameReady;
-        //        _videoClient.Connect(doctorIp, 4531 + patientIndex - 1);
-
-
-        //        // Streaming video out on port 4555
-        //        _videoListener = new ColorListener(this.sensorChooser.Kinect, 4555 + patientIndex - 1, ImageFormat.Jpeg);
-        //        _videoListener.Start();
-
-        //        //_audioClient = new AudioClient();
-        //        //_audioClient.AudioFrameReady += _audioClient_AudioFrameReady;
-        //        //_audioClient.Connect(doctorIp, 4541 + patientIndex - 1);
-
-        //        ////for sending audio
-        //        //_audioListener = new AudioListener(this.sensorChooser.Kinect, 4565 + patientIndex - 1);
-        //        //_audioListener.Start();
-
-        //    }
-
-        //}
-
-        ///// <summary>
-        ///// Called when the KinectSensorChooser gets a new sensor
-        ///// </summary>
-        ///// <param name="sender">sender of the event</param>
-        ///// <param name="e">event arguments</param>
-        //void sensorChooser_KinectChanged(object sender, KinectChangedEventArgs e)
-        //{
-        //    if (e.OldSensor != null)
-        //    {
-        //        try
-        //        {
-        //            e.OldSensor.ColorStream.Disable();
-        //        }
-        //        catch (InvalidOperationException)
-        //        {
-        //            // KinectSensor might enter an invalid state while enabling/disabling streams or stream features.
-        //            // E.g.: sensor might be abruptly unplugged.
-
-        //        }
-        //    }
-
-        //    if (e.NewSensor != null)
-        //    {
-        //        try
-        //        {
-        //            e.NewSensor.ColorStream.Enable(ColorImageFormat.RgbResolution640x480Fps30);
-        //            e.NewSensor.ColorFrameReady += NewSensor_ColorFrameReady;
-
-        //        }
-        //        catch (InvalidOperationException)
-        //        {
-        //            // KinectSensor might enter an invalid state while enabling/disabling streams or stream features.
-        //            // E.g.: sensor might be abruptly unplugged.
-        //        }
-        //    }
-        //}
+            // Don't try this unless there is a kinect
+            if (this.sensorChooser.Kinect != null)
+            {
+                //trying to get the video from the clinician -- this can fail
+                _videoClient = new ColorClient();
+                _videoClient.ColorFrameReady += _videoClient_ColorFrameReady;
+                _videoClient.Connect(doctorIp, 4531 + patientIndex - 1);
 
 
-        //void NewSensor_ColorFrameReady(object sender, ColorImageFrameReadyEventArgs e)
-        //{
-        //    using (ColorImageFrame frame = e.OpenColorImageFrame())
-        //    {
-        //        if (frame == null)
-        //        {
-        //            return;
-        //        }
+                // Streaming video out on port 4555
+                _videoListener = new ColorListener(this.sensorChooser.Kinect, 4555 + patientIndex - 1, ImageFormat.Jpeg);
+                _videoListener.Start();
 
-        //        if (pixels.Length == 0)
-        //        {
-        //            this.pixels = new byte[frame.PixelDataLength];
-        //        }
-        //        frame.CopyPixelDataTo(this.pixels);
+                //_audioClient = new AudioClient();
+                //_audioClient.AudioFrameReady += _audioClient_AudioFrameReady;
+                //_audioClient.Connect(doctorIp, 4541 + patientIndex - 1);
 
-        //        outputImage = new WriteableBitmap(frame.Width, frame.Height, 96, 96, PixelFormats.Bgr32, null);
+                ////for sending audio
+                //_audioListener = new AudioListener(this.sensorChooser.Kinect, 4565 + patientIndex - 1);
+                //_audioListener.Start();
 
-        //        outputImage.WritePixels(
-        //            new Int32Rect(0, 0, frame.Width, frame.Height), this.pixels, frame.Width * 4, 0);
+            }
 
-        //        this.patientFrame.Source = outputImage;
+        }
 
-        //        // force the garbase collector to remove outputImage --> otherwise, causes mem leak
-        //        outputImage = null;
-        //        GC.Collect();
-        //    };
+        /// <summary>
+        /// Called when the KinectSensorChooser gets a new sensor
+        /// </summary>
+        /// <param name="sender">sender of the event</param>
+        /// <param name="e">event arguments</param>
+        void sensorChooser_KinectChanged(object sender, KinectChangedEventArgs e)
+        {
+            if (e.OldSensor != null)
+            {
+                try
+                {
+                    e.OldSensor.ColorStream.Disable();
+                }
+                catch (InvalidOperationException)
+                {
+                    // KinectSensor might enter an invalid state while enabling/disabling streams or stream features.
+                    // E.g.: sensor might be abruptly unplugged.
 
-        //}
+                }
+            }
 
-        ////called when a video frame from the client is ready
-        //void _videoClient_ColorFrameReady(object sender, ColorFrameReadyEventArgs e)
-        //{
-        //    this.doctorFrame.Source = e.ColorFrame.BitmapImage;
-        //}
+            if (e.NewSensor != null)
+            {
+                try
+                {
+                    e.NewSensor.ColorStream.Enable(ColorImageFormat.RgbResolution640x480Fps30);
+                    e.NewSensor.ColorFrameReady += NewSensor_ColorFrameReady;
 
-        //private void InitializeAudio()
-        //{
-        //    wo.DesiredLatency = 100;
-        //    mybufferwp = new BufferedWaveProvider(wf);
-        //    mybufferwp.BufferDuration = TimeSpan.FromMinutes(5);
-        //    wo.Init(mybufferwp);
-        //    wo.Play();
-        //}
+                }
+                catch (InvalidOperationException)
+                {
+                    // KinectSensor might enter an invalid state while enabling/disabling streams or stream features.
+                    // E.g.: sensor might be abruptly unplugged.
+                }
+            }
+        }
+
+
+        void NewSensor_ColorFrameReady(object sender, ColorImageFrameReadyEventArgs e)
+        {
+            using (ColorImageFrame frame = e.OpenColorImageFrame())
+            {
+                if (frame == null)
+                {
+                    return;
+                }
+
+                if (pixels.Length == 0)
+                {
+                    this.pixels = new byte[frame.PixelDataLength];
+                }
+                frame.CopyPixelDataTo(this.pixels);
+
+                outputImage = new WriteableBitmap(frame.Width, frame.Height, 96, 96, PixelFormats.Bgr32, null);
+
+                outputImage.WritePixels(
+                    new Int32Rect(0, 0, frame.Width, frame.Height), this.pixels, frame.Width * 4, 0);
+
+                this.patientFrame.Source = outputImage;
+
+                // force the garbase collector to remove outputImage --> otherwise, causes mem leak
+                outputImage = null;
+                GC.Collect();
+            };
+
+        }
+
+        //called when a video frame from the client is ready
+        void _videoClient_ColorFrameReady(object sender, ColorFrameReadyEventArgs e)
+        {
+            this.doctorFrame.Source = e.ColorFrame.BitmapImage;
+        }
+
+        private void InitializeAudio()
+        {
+            wo.DesiredLatency = 100;
+            mybufferwp = new BufferedWaveProvider(wf);
+            mybufferwp.BufferDuration = TimeSpan.FromMinutes(5);
+            wo.Init(mybufferwp);
+            wo.Play();
+        }
 
         //void _audioClient_AudioFrameReady(object sender, AudioFrameReadyEventArgs e)
         //{
@@ -700,7 +700,7 @@ namespace CardiacRehab
         //}
 
 
-        //#endregion
+        #endregion
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {

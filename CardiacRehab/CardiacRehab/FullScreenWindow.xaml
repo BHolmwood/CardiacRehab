@@ -25,7 +25,7 @@
             <RowDefinition Height="85*"/>
         </Grid.RowDefinitions>
         <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Stretch" Margin="1,55,2,54" VerticalAlignment="Stretch" Grid.RowSpan="4" Grid.ColumnSpan="3" Grid.Column="1">
-            <Image x:Name="patientFrame" HorizontalAlignment="Stretch" Margin="2,2,-12,-2" VerticalAlignment="Stretch" Stretch="Uniform"/>
+            <Image x:Name="patientFrame" HorizontalAlignment="Stretch" Margin="2,2,-2,-2" VerticalAlignment="Stretch" Stretch="Uniform"/>
         </Border>
         <Border x:Name="ecgBorder" BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Stretch" Margin="10,5,10,10" VerticalAlignment="Stretch" Grid.Row="4" Grid.RowSpan="3" Grid.ColumnSpan="7">
             <d3:ChartPlotter x:Name="fullplotter" Margin="0,2,5,0">
@@ -38,7 +38,7 @@
             </d3:ChartPlotter>
         </Border>
         <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Stretch" Margin="5,55,5,5" VerticalAlignment="Stretch" Grid.Column="4" Grid.ColumnSpan="3" Grid.RowSpan="2">
-            <Image x:Name="doctorFrame" HorizontalAlignment="Stretch" Margin="8,8,-12,-12" VerticalAlignment="Stretch"/>
+            <Image x:Name="doctorFrame" HorizontalAlignment="Stretch" Margin="-2" VerticalAlignment="Stretch"/>
         </Border>
         <Label x:Name="pateintId" Content="Patient 1" HorizontalAlignment="Stretch" Margin="10,-1,59,21" VerticalAlignment="Stretch" Foreground="#FFC10505" FontFamily="Century" FontWeight="Bold" FontSize="36" Grid.Column="2"/>
         <Label x:Name="WarningLabel" Content="Warning" HorizontalAlignment="Stretch" Margin="42,14,38,0" VerticalAlignment="Stretch" Foreground="#FFFD0707" FontFamily="Century" FontSize="24" FontWeight="Bold" Background="#FFF7FBF7" Grid.Column="3" Grid.ColumnSpan="4" Visibility="Hidden"/>

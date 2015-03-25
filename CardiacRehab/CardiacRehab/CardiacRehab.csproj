@@ -92,9 +92,6 @@
       <DependentUpon>DoctorWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DoctorWindowPrototype.xaml.cs">
-      <DependentUpon>DoctorWindowPrototype.xaml</DependentUpon>
-    </Compile>
     <Compile Include="FullScreenWindow.xaml.cs">
       <DependentUpon>FullScreenWindow.xaml</DependentUpon>
     </Compile>
@@ -106,9 +103,6 @@
     <Compile Include="PatientWindow.xaml.cs">
       <DependentUpon>PatientWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PatientWindowPrototype_old.xaml.cs">
-      <DependentUpon>PatientWindowPrototype_old.xaml</DependentUpon>
-    </Compile>
     <Compile Include="PhidgetEncoder.cs" />
     <Compile Include="TextBoxStreamWriter.cs" />
     <Compile Include="UdpBiosocket.cs" />
@@ -117,10 +111,6 @@
     <Page Include="DoctorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="DoctorWindowPrototype.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="FullScreenWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -147,10 +137,6 @@
     <Page Include="PatientWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="PatientWindowPrototype_old.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PopupWindow.xaml">
       <SubType>Designer</SubType>
