@@ -31,7 +31,7 @@ namespace CardiacRehab
     /// <summary>
     /// Interaction logic for DoctorWindowPrototype.xaml
     /// </summary>
-    public partial class DoctorWindowPrototype : Window
+  /*  public partial class DoctorWindowPrototype : Window
     {
         List<ContactInfo> PatientList;
 
@@ -81,5 +81,5 @@ namespace CardiacRehab
         {
             InitializeComponent();
         }
-    }
+    } */
 }
