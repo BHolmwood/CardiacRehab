@@ -32,13 +32,13 @@
             <Canvas HorizontalAlignment="Center" Height="719" VerticalAlignment="Center" Width="51" Margin="10,10,0,10" Grid.RowSpan="3">
                 <Label x:Name="hrLabel" Content="HR" Canvas.Top="127" FontFamily="Century" FontSize="16" Canvas.Left="7"/>
                 <Image Height="35" Canvas.Left="7" Source="Resources/heart.png" Stretch="Uniform" Canvas.Top="87" Width="35"/>
-                <Label x:Name="hrValue" Content="--" Canvas.Left="10" Canvas.Top="161" FontFamily="Century" FontSize="16" RenderTransformOrigin="0.419,1.759"/>
+                <Label x:Name="hrValue" Content="--" Canvas.Left="10" Canvas.Top="161" FontFamily="Century" FontSize="16" RenderTransformOrigin="0.419,1.759" Foreground="#FF43C114"/>
                 <Label x:Name="oxiLabel" Content="Ox" Canvas.Top="317" FontFamily="Century" FontSize="16" Canvas.Left="6"/>
                 <Image Height="36" Canvas.Left="6" Source="Resources/oxygen.png" Stretch="Uniform" Canvas.Top="276" Width="36"/>
-                <Label x:Name="oxiValue" Content="--" Canvas.Left="10" Canvas.Top="351" FontFamily="Century" FontSize="16" RenderTransformOrigin="0.419,1.759"/>
+                <Label x:Name="oxiValue" Content="--" Canvas.Left="10" Canvas.Top="351" FontFamily="Century" FontSize="16" RenderTransformOrigin="0.419,1.759" Foreground="#FF43C114"/>
                 <Label x:Name="bpLabel" Content="BP" Canvas.Left="8" Canvas.Top="480" FontFamily="Century" FontSize="16"/>
                 <Image Height="36" Canvas.Left="8" Source="Resources/bp.png" Stretch="Fill" Canvas.Top="439" Width="36"/>
-                <Label x:Name="bpValue" Content="--" Canvas.Left="10" Canvas.Top="514" FontFamily="Century" FontSize="16" RenderTransformOrigin="0.419,1.759"/>
+                <Label x:Name="bpValue" Content="--" Canvas.Left="10" Canvas.Top="514" FontFamily="Century" FontSize="16" RenderTransformOrigin="0.419,1.759" Foreground="#FF43C114"/>
             </Canvas>
             <TextBox x:Name="txtMessage" TextWrapping="Wrap" Grid.Column="2" Margin="10,238,10,10" Grid.Row="2"/>
         </Grid>
