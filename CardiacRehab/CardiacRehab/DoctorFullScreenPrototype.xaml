@@ -3,6 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="DocotorFullScreenPrototype" Height="780" Width="1024">
     <Grid>
-        
+        <Image x:Name="mainFrame" Height="420" Margin="4,190,0,0" Width="740" OpacityMask="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Panel.ZIndex="4"/>
+        <Border x:Name="MFborder" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="428" Margin="1,185,0,0" VerticalAlignment="Top" Width="745"/>
+        <Border x:Name="p2Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="161" Margin="199,7,0,0" VerticalAlignment="Top" Width="237"/>
+        <Border x:Name="p3Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="161" Margin="481,7,0,0" VerticalAlignment="Top" Width="237"/>
+        <Border x:Name="p4Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="161" Margin="763,7,0,0" VerticalAlignment="Top" Width="237"/>
+        <Border x:Name="p5Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="161" Margin="765,221,0,0" VerticalAlignment="Top" Width="237"/>
+        <Border x:Name="p6Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="161" Margin="765,427,0,0" VerticalAlignment="Top" Width="237"/>
+        <Label Content="MV: Patient 2" HorizontalAlignment="Left" Height="60" Margin="14,52,0,0" VerticalAlignment="Top" Width="165" FontSize="22"/>
+
     </Grid>
 </Window>
