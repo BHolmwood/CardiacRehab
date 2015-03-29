@@ -18,70 +18,70 @@
         <Label x:Name="bpDiaValue1" Content="--" FontWeight="Bold" Margin="316,278,986,360" Foreground="#FF1888E6"/>
         <Label x:Name="bpSysDivSymbol1" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="305,274,1001,374" Foreground="#FF1888E6"/>
         <Image x:Name="hrImage2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="462,279,846,372"/>
-        <Label x:Name="hrLabel2" Content="HR : " FontWeight="Bold" Margin="487,277,810,368"/>
-        <Label x:Name="hrValue2" Content="--" FontWeight="Bold" Margin="519,278,784,367" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit2" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="538,278,759,369" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel2" Content="OX : " FontWeight="Bold" Margin="621,275,676,371"/>
-        <Image x:Name="oxiImage2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="590,278,718,374"/>
-        <Label x:Name="oxiValue2" Content="--" FontWeight="Bold" Margin="658,275,645,371" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign2" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="681,277,625,373" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="715,278,593,368"/>
-        <Label x:Name="bpLabel2" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="746,275,551,363"/>
-        <Label x:Name="bpSysValue2" Content="--" FontWeight="Bold" Margin="783,275,520,363" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue2" Content="--" FontWeight="Bold" Margin="820,275,482,363" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol2" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="806,275,507,363" Foreground="#FF1888E6"/>
+        <Label x:Name="hrLabel2" Content="HR : " FontWeight="Bold" Margin="482,277,815,368"/>
+        <Label x:Name="hrValue2" Content="--" FontWeight="Bold" Margin="513,278,790,367" BorderBrush="Black" Foreground="#FFF31010"/>
+        <Label x:Name="hrUnit2" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="530,278,767,369" Foreground="#FFE82222"/>
+        <Label x:Name="oxiLabel2" Content="OX : " FontWeight="Bold" Margin="600,275,697,371"/>
+        <Image x:Name="oxiImage2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="574,278,734,374"/>
+        <Label x:Name="oxiValue2" Content="--" FontWeight="Bold" Margin="634,275,669,371" Foreground="#FF43C114"/>
+        <Label x:Name="oxiSign2" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="656,277,650,373" Foreground="#FF43C114" Width="26"/>
+        <Image x:Name="bpImage2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="682,278,626,368"/>
+        <Label x:Name="bpLabel2" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="713,275,584,363"/>
+        <Label x:Name="bpSysValue2" Content="--" FontWeight="Bold" Margin="747,275,556,363" Foreground="#FF1888E6"/>
+        <Label x:Name="bpDiaValue2" Content="--" FontWeight="Bold" Margin="783,275,519,363" Foreground="#FF1888E6"/>
+        <Label x:Name="bpSysDivSymbol2" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="767,275,546,363" Foreground="#FF1888E6"/>
         <Image x:Name="hrImage4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="15,607,1293,44"/>
-        <Label x:Name="hrLabel4" Content="HR : " FontWeight="Bold" Margin="40,605,1257,40"/>
-        <Label x:Name="hrValue4" Content="--" FontWeight="Bold" Margin="72,606,1231,39" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit4" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="91,606,1206,41" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel4" Content="OX : " FontWeight="Bold" Margin="174,603,1123,43"/>
-        <Image x:Name="oxiImage4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="143,606,1165,46"/>
-        <Label x:Name="oxiValue4" Content="--" FontWeight="Bold" Margin="211,603,1092,43" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign4" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="234,605,1072,45" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="268,606,1040,40"/>
-        <Label x:Name="bpLabel4" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="299,603,998,35"/>
-        <Label x:Name="bpSysValue4" Content="--" FontWeight="Bold" Margin="336,603,967,35" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue4" Content="--" FontWeight="Bold" Margin="373,603,929,35" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol4" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="359,603,954,35" Foreground="#FF1888E6"/>
+        <Label x:Name="hrLabel4" Content="HR : " FontWeight="Bold" Margin="36,606,1261,39"/>
+        <Label x:Name="hrValue4" Content="--" FontWeight="Bold" Margin="68,605,1235,40" BorderBrush="Black" Foreground="#FFF31010"/>
+        <Label x:Name="hrUnit4" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="86,606,1211,41" Foreground="#FFE82222"/>
+        <Label x:Name="oxiLabel4" Content="OX : " FontWeight="Bold" Margin="155,603,1142,43"/>
+        <Image x:Name="oxiImage4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="130,605,1178,47"/>
+        <Label x:Name="oxiValue4" Content="--" FontWeight="Bold" Margin="191,604,1112,42" Foreground="#FF43C114"/>
+        <Label x:Name="oxiSign4" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="211,606,1095,44" Foreground="#FF43C114" Width="26"/>
+        <Image x:Name="bpImage4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="234,606,1074,40"/>
+        <Label x:Name="bpLabel4" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="263,603,1034,35"/>
+        <Label x:Name="bpSysValue4" Content="--" FontWeight="Bold" Margin="294,605,1009,33" Foreground="#FF1888E6"/>
+        <Label x:Name="bpDiaValue4" Content="--" FontWeight="Bold" Margin="325,605,977,33" Foreground="#FF1888E6"/>
+        <Label x:Name="bpSysDivSymbol4" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="314,603,999,35" Foreground="#FF1888E6"/>
         <Image x:Name="hrImage5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="462,607,846,44"/>
-        <Label x:Name="hrLabel5" Content="HR : " FontWeight="Bold" Margin="487,605,810,40"/>
-        <Label x:Name="hrValue5" Content="--" FontWeight="Bold" Margin="519,606,784,39" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit5" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="538,606,759,41" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel5" Content="OX : " FontWeight="Bold" Margin="621,603,676,43"/>
-        <Image x:Name="oxiImage5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="590,606,718,46"/>
-        <Label x:Name="oxiValue5" Content="--" FontWeight="Bold" Margin="658,603,645,43" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign5" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="681,605,625,45" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="715,606,593,40"/>
-        <Label x:Name="bpLabel5" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="746,603,551,35"/>
-        <Label x:Name="bpSysValue5" Content="--" FontWeight="Bold" Margin="783,603,520,35" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue5" Content="--" FontWeight="Bold" Margin="820,603,482,35" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol5" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="806,603,507,35" Foreground="#FF1888E6"/>
-        <Image x:Name="hrImage3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="900,281,408,370"/>
-        <Label x:Name="hrLabel3" Content="HR : " FontWeight="Bold" Margin="925,279,372,366"/>
-        <Label x:Name="hrValue3" Content="--" FontWeight="Bold" Margin="957,280,346,365" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit3" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="976,280,321,367" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel3" Content="OX : " FontWeight="Bold" Margin="1059,277,238,369"/>
-        <Image x:Name="oxiImage13" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="1028,280,280,372"/>
-        <Label x:Name="oxiValue3" Content="--" FontWeight="Bold" Margin="1096,277,207,369" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign3" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="1119,279,187,371" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="1153,280,155,366"/>
-        <Label x:Name="bpLabel3" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="1184,277,113,361"/>
-        <Label x:Name="bpSysValue3" Content="--" FontWeight="Bold" Margin="1221,277,82,361" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue3" Content="--" FontWeight="Bold" Margin="1258,277,44,361" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol3" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="1244,277,69,361" Foreground="#FF1888E6"/>
-        <Image x:Name="hrImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="900,608,408,43"/>
-        <Label x:Name="hrLabe6" Content="HR : " FontWeight="Bold" Margin="925,606,372,39"/>
-        <Label x:Name="hrValue6" Content="--" FontWeight="Bold" Margin="957,607,346,38" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit6" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="976,607,321,40" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel6" Content="OX : " FontWeight="Bold" Margin="1059,604,238,42"/>
-        <Image x:Name="oxiImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="1028,607,280,45"/>
-        <Label x:Name="oxiValue6" Content="--" FontWeight="Bold" Margin="1096,604,207,42" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign6" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="1119,606,187,44" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="1153,607,155,39"/>
-        <Label x:Name="bpLabel6" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="1184,604,113,34"/>
-        <Label x:Name="bpSysValue6" Content="--" FontWeight="Bold" Margin="1221,604,82,34" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue6" Content="--" FontWeight="Bold" Margin="1258,604,44,34" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol6" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="1244,604,69,34" Foreground="#FF1888E6"/>
+        <Label x:Name="hrLabel5" Content="HR : " FontWeight="Bold" Margin="482,604,815,41"/>
+        <Label x:Name="hrValue5" Content="--" FontWeight="Bold" Margin="513,607,790,38" BorderBrush="Black" Foreground="#FFF31010"/>
+        <Label x:Name="hrUnit5" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="530,606,767,41" Foreground="#FFE82222"/>
+        <Label x:Name="oxiLabel5" Content="OX : " FontWeight="Bold" Margin="603,604,694,42"/>
+        <Image x:Name="oxiImage5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="574,607,734,45"/>
+        <Label x:Name="oxiValue5" Content="--" FontWeight="Bold" Margin="641,605,662,41" Foreground="#FF43C114"/>
+        <Label x:Name="oxiSign5" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="661,607,645,43" Foreground="#FF43C114" Width="26"/>
+        <Image x:Name="bpImage5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="688,604,620,42"/>
+        <Label x:Name="bpLabel5" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="716,603,581,35"/>
+        <Label x:Name="bpSysValue5" Content="--" FontWeight="Bold" Margin="746,603,557,35" Foreground="#FF1888E6"/>
+        <Label x:Name="bpDiaValue5" Content="--" FontWeight="Bold" Margin="780,603,522,35" Foreground="#FF1888E6"/>
+        <Label x:Name="bpSysDivSymbol5" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="766,603,547,35" Foreground="#FF1888E6"/>
+        <Image x:Name="hrImage3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="897,281,411,370"/>
+        <Label x:Name="hrLabel3" Content="HR : " FontWeight="Bold" Margin="920,279,377,366"/>
+        <Label x:Name="hrValue3" Content="--" FontWeight="Bold" Margin="955,280,348,365" BorderBrush="Black" Foreground="#FFF31010"/>
+        <Label x:Name="hrUnit3" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="972,280,325,367" Foreground="#FFE82222"/>
+        <Label x:Name="oxiLabel3" Content="OX : " FontWeight="Bold" Margin="1039,277,258,369"/>
+        <Image x:Name="oxiImage13" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="1013,280,295,372"/>
+        <Label x:Name="oxiValue3" Content="--" FontWeight="Bold" Margin="1074,277,229,369" Foreground="#FF43C114"/>
+        <Label x:Name="oxiSign3" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="1095,279,211,371" Foreground="#FF43C114" Width="26"/>
+        <Image x:Name="bpImage3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="1119,280,189,366"/>
+        <Label x:Name="bpLabel3" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="1152,277,145,361"/>
+        <Label x:Name="bpSysValue3" Content="--" FontWeight="Bold" Margin="1187,277,116,361" Foreground="#FF1888E6"/>
+        <Label x:Name="bpDiaValue3" Content="--" FontWeight="Bold" Margin="1224,277,78,361" Foreground="#FF1888E6"/>
+        <Label x:Name="bpSysDivSymbol3" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="1208,277,105,361" Foreground="#FF1888E6"/>
+        <Image x:Name="hrImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="899,608,409,43"/>
+        <Label x:Name="hrLabe6" Content="HR : " FontWeight="Bold" Margin="918,606,379,39"/>
+        <Label x:Name="hrValue6" Content="--" FontWeight="Bold" Margin="951,607,352,38" BorderBrush="Black" Foreground="#FFF31010"/>
+        <Label x:Name="hrUnit6" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="972,607,325,40" Foreground="#FFE82222"/>
+        <Label x:Name="oxiLabel6" Content="OX : " FontWeight="Bold" Margin="1036,604,261,42"/>
+        <Image x:Name="oxiImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="1013,607,295,45"/>
+        <Label x:Name="oxiValue6" Content="--" FontWeight="Bold" Margin="1074,604,229,42" Foreground="#FF43C114"/>
+        <Label x:Name="oxiSign6" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="1093,606,213,44" Foreground="#FF43C114" Width="26"/>
+        <Image x:Name="bpImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="1123,607,185,39"/>
+        <Label x:Name="bpLabel6" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="1150,604,147,34"/>
+        <Label x:Name="bpSysValue6" Content="--" FontWeight="Bold" Margin="1183,604,120,34" Foreground="#FF1888E6"/>
+        <Label x:Name="bpDiaValue6" Content="--" FontWeight="Bold" Margin="1220,604,82,34" Foreground="#FF1888E6"/>
+        <Label x:Name="bpSysDivSymbol6" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="1208,604,105,34" Foreground="#FF1888E6"/>
         <Grid HorizontalAlignment="Left" Height="238" Margin="452,28,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
             <Image x:Name="patientFrame2" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
             <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
@@ -208,7 +208,17 @@
                 <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
             </d3:ChartPlotter>
         </Grid>
-        <Image HorizontalAlignment="Left" Height="20" Margin="350,279,0,0" VerticalAlignment="Top" Width="32" OpacityMask="Black" Source="Resources/rpe.png"/>
-        <Label x:Name="hrValue1_Copy" Content="--" FontWeight="Bold" Margin="373,276,930,369" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Image HorizontalAlignment="Left" Height="20" Margin="345,279,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
+        <Label x:Name="hrValue1_Copy" Content="--" FontWeight="Bold" Margin="367,276,936,369" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Image HorizontalAlignment="Left" Height="20" Margin="811,279,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
+        <Label x:Name="hrValue1_Copy1" Content="--" FontWeight="Bold" Margin="835,277,468,368" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Image HorizontalAlignment="Left" Height="20" Margin="1251,279,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
+        <Label x:Name="hrValue1_Copy2" Content="--" FontWeight="Bold" Margin="1271,277,32,368" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Image HorizontalAlignment="Left" Height="20" Margin="346,607,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
+        <Label x:Name="hrValue1_Copy3" Content="--" FontWeight="Bold" Margin="368,604,935,41" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Image HorizontalAlignment="Left" Height="20" Margin="811,606,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
+        <Label x:Name="hrValue1_Copy4" Content="--" FontWeight="Bold" Margin="835,604,468,41" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Image HorizontalAlignment="Left" Height="20" Margin="1249,606,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
+        <Label x:Name="hrValue1_Copy5" Content="--" FontWeight="Bold" Margin="1269,604,34,41" BorderBrush="Black" Foreground="#FF0C0B0B"/>
     </Grid>
 </Window>
