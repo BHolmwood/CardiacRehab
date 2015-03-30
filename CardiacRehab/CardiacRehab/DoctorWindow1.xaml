@@ -7,7 +7,6 @@
         Title="DoctorWindow" Height="780" Width="1024" WindowStartupLocation="CenterScreen"
         WindowState="Maximized">
     <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <k:KinectSensorChooserUI HorizontalAlignment="Center" VerticalAlignment="Top" Name="sensorChooserUi" />
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="62*"/>
