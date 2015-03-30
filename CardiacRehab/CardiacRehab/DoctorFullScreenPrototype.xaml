@@ -4,26 +4,114 @@
         xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0" x:Class="CardiacRehab.DocotorFullScreenPrototype"
         Title="DocotorFullScreenPrototype" Height="780" Width="1024">
     <Grid>
-        <Image x:Name="mainFrame" Height="374" Margin="7,190,0,0" Width="666" OpacityMask="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Panel.ZIndex="4"/>
-        <Border x:Name="MFborder" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="385" Margin="3,185,0,0" VerticalAlignment="Top" Width="743"/>
+        <Image x:Name="mainFrame" Height="360" Margin="7,210,0,0" Width="667" OpacityMask="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Panel.ZIndex="4"/>
+        <Border x:Name="MFborder" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="359" Margin="3,211,0,0" VerticalAlignment="Top" Width="743">
+            <Grid Background="#FFE5EAF0">
+                <Button x:Name="mute1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="688,81,15,238" Background="#FFE8DEDE">
+                    <Image x:Name="muteIcon1" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+                </Button>
+                <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo1" Click="memo2_Click" Margin="688,24,16,295" Background="#FFE8DEDE">
+                    <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+                </Button>
+                <Button x:Name="expand1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="688,136,15,183" Background="#FFE8DEDE">
+                    <Image Source="Resources/collapse.png" Stretch="Uniform" Margin="5"/>
+                </Button>
+                <Button x:Name="expand1_Copy" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="688,188,15,131" Background="#FFE8DEDE">
+                    <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
+                </Button>
+                <Button x:Name="expand1_Copy1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="688,248,15,71" Background="#FFE8DEDE">
+                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
+                </Button>
+            </Grid>
+        </Border>
         <Border x:Name="p2Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="161" Margin="199,7,0,0" VerticalAlignment="Top" Width="237">
-            <Grid Background="#FFE5EAF0"/>
+            <Grid Background="#FFE5EAF0">
+                <Button Content="Connect" HorizontalAlignment="Left" Height="37" Margin="12,21,0,0" VerticalAlignment="Top" Width="81" Background="#FFE8DEDE" FontSize="16" FontFamily="Simplified Arabic Fixed"/>
+                <d3:ChartPlotter x:Name="plotter" Margin="2,115,2,0">
+                    <d3:ChartPlotter.HorizontalAxis>
+                        <d3:HorizontalAxis x:Name="dateAxis" FontSize="7"/>
+                    </d3:ChartPlotter.HorizontalAxis>
+                    <d3:Header FontFamily="Microsoft Uighur"/>
+                    <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
+                    <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
+                </d3:ChartPlotter>
+                <Image x:Name="patientFrame1" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="189"/>
+                <Button x:Name="expand1_Copy2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="200,20,9,110" Background="#FFE8DEDE">
+                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
+                </Button>
+            </Grid>
         </Border>
         <Border x:Name="p3Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="161" Margin="481,7,0,0" VerticalAlignment="Top" Width="237">
-            <Grid Background="#FFE5EAF0"/>
+            <Grid Background="#FFE5EAF0">
+                <Button Content="Connect" HorizontalAlignment="Left" Height="37" Margin="12,21,0,0" VerticalAlignment="Top" Width="81" Background="#FFE8DEDE" FontSize="16" FontFamily="Simplified Arabic Fixed"/>
+                <d3:ChartPlotter x:Name="plotter_Copy" Margin="2,115,2,0">
+                    <d3:ChartPlotter.HorizontalAxis>
+                        <d3:HorizontalAxis x:Name="dateAxis1" FontSize="7"/>
+                    </d3:ChartPlotter.HorizontalAxis>
+                    <d3:Header FontFamily="Microsoft Uighur"/>
+                    <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
+                    <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
+                </d3:ChartPlotter>
+                <Image x:Name="patientFrame1_Copy" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="189"/>
+                <Button x:Name="expand1_Copy3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="200,20,9,110" Background="#FFE8DEDE">
+                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
+                </Button>
+            </Grid>
         </Border>
         <Border x:Name="p4Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="161" Margin="763,7,0,0" VerticalAlignment="Top" Width="237">
-            <Grid Background="#FFE5EAF0"/>
+            <Grid Background="#FFE5EAF0">
+                <Button Content="Connect" HorizontalAlignment="Left" Height="37" Margin="12,21,0,0" VerticalAlignment="Top" Width="81" Background="#FFE8DEDE" FontSize="16" FontFamily="Simplified Arabic Fixed"/>
+                <d3:ChartPlotter x:Name="plotter_Copy1" Margin="2,115,2,0">
+                    <d3:ChartPlotter.HorizontalAxis>
+                        <d3:HorizontalAxis x:Name="dateAxis2" FontSize="7"/>
+                    </d3:ChartPlotter.HorizontalAxis>
+                    <d3:Header FontFamily="Microsoft Uighur"/>
+                    <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
+                    <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
+                </d3:ChartPlotter>
+                <Image x:Name="patientFrame1_Copy1" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="189"/>
+                <Button x:Name="expand1_Copy4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="200,20,9,110" Background="#FFE8DEDE">
+                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
+                </Button>
+            </Grid>
         </Border>
         <Border x:Name="p5Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="161" Margin="765,207,0,0" VerticalAlignment="Top" Width="237">
-            <Grid Background="#FFE5EAF0"/>
+            <Grid Background="#FFE5EAF0">
+                <Button Content="Connect" HorizontalAlignment="Left" Height="37" Margin="12,21,0,0" VerticalAlignment="Top" Width="81" Background="#FFE8DEDE" FontSize="16" FontFamily="Simplified Arabic Fixed"/>
+                <d3:ChartPlotter x:Name="plotter_Copy2" Margin="2,115,2,0">
+                    <d3:ChartPlotter.HorizontalAxis>
+                        <d3:HorizontalAxis x:Name="dateAxis3" FontSize="7"/>
+                    </d3:ChartPlotter.HorizontalAxis>
+                    <d3:Header FontFamily="Microsoft Uighur"/>
+                    <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
+                    <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
+                </d3:ChartPlotter>
+                <Image x:Name="patientFrame1_Copy2" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="189"/>
+                <Button x:Name="expand1_Copy5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="200,20,9,110" Background="#FFE8DEDE">
+                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
+                </Button>
+            </Grid>
         </Border>
         <Border x:Name="p6Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="161" Margin="765,409,0,0" VerticalAlignment="Top" Width="237">
-            <Grid Background="#FFE5EAF0"/>
+            <Grid Background="#FFE5EAF0">
+                <Button Content="Connect" HorizontalAlignment="Left" Height="37" Margin="12,21,0,0" VerticalAlignment="Top" Width="81" Background="#FFE8DEDE" FontSize="16" FontFamily="Simplified Arabic Fixed"/>
+                <d3:ChartPlotter x:Name="plotter_Copy3" Margin="2,115,2,0">
+                    <d3:ChartPlotter.HorizontalAxis>
+                        <d3:HorizontalAxis x:Name="dateAxis5" FontSize="7"/>
+                    </d3:ChartPlotter.HorizontalAxis>
+                    <d3:Header FontFamily="Microsoft Uighur"/>
+                    <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
+                    <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
+                </d3:ChartPlotter>
+                <Image x:Name="patientFrame1_Copy3" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="189"/>
+                <Button x:Name="expand1_Copy6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="200,20,9,110" Background="#FFE8DEDE">
+                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
+                </Button>
+            </Grid>
         </Border>
-        <Label Content="MV: Patient 2" HorizontalAlignment="Left" Height="60" Margin="14,52,0,0" VerticalAlignment="Top" Width="165" FontSize="22"/>
+        <Label x:Name="mainLabel" Content="MV:&#xD;&#xA;Patient 2" HorizontalAlignment="Left" Height="74" Margin="14,52,0,0" VerticalAlignment="Top" Width="165" FontSize="22"/>
 
-        <d3:ChartPlotter x:Name="ecgGraph" Margin="-1,626,0,2">
+        <d3:ChartPlotter x:Name="ecgGraph" Margin="-1,620,0,2">
             <d3:ChartPlotter.HorizontalAxis>
                 <d3:HorizontalAxis x:Name="dateAxis4" FontSize="7"/>
             </d3:ChartPlotter.HorizontalAxis>
@@ -46,6 +134,66 @@
         <Label x:Name="bpSysDivSymbol1" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="445,580,545,143" Foreground="#FF1888E6"/>
         <Image x:Name="rpeImage" HorizontalAlignment="Left" Height="31" Margin="503,578,0,0" VerticalAlignment="Top" Width="32" OpacityMask="Black" Source="Resources/rpe.png"/>
         <Label x:Name="rpeValue" Content="--" FontWeight="Bold" Margin="535,582,452,138" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="hrLabel1_Copy" Content="HR : " FontWeight="Bold" Margin="186,169,795,551"/>
+        <Label x:Name="hrValue1_Copy" Content="--" FontWeight="Bold" Margin="216,170,771,550" BorderBrush="Black" Foreground="#FFF31010"/>
+        <Label x:Name="hrUnit1_Copy" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="234,170,747,552" Foreground="#FFE82222"/>
+        <Label x:Name="oxiLabel1_Copy" Content="OX : " FontWeight="Bold" Margin="265,171,716,550"/>
+        <Label x:Name="oxiValue1_Copy" Content="--" FontWeight="Bold" Margin="295,171,692,550" Foreground="#FF43C114"/>
+        <Label x:Name="oxiSign1_Copy" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="311,171,679,554" Foreground="#FF43C114" Width="26"/>
+        <Label x:Name="bpLabel1_Copy" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="326,171,648,542"/>
+        <Label x:Name="bpSysValue1_Copy" Content="--" FontWeight="Bold" Margin="354,172,621,541" Foreground="#FF1888E6"/>
+        <Label x:Name="bpDiaValue1_Copy" Content="--" FontWeight="Bold" Margin="380,174,606,539" Foreground="#FF1888E6"/>
+        <Label x:Name="bpSysDivSymbol1_Copy" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="369,170,621,553" Foreground="#FF1888E6"/>
+        <Label x:Name="hrValue1_Copy1" Content="--" FontWeight="Bold" Margin="429,172,558,548" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="bpLabel1_Copy1" Content="EPG:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="398,173,576,540"/>
+        <Label x:Name="hrLabel1_Copy1" Content="HR : " FontWeight="Bold" Margin="470,169,511,551"/>
+        <Label x:Name="hrValue1_Copy2" Content="--" FontWeight="Bold" Margin="500,170,487,550" BorderBrush="Black" Foreground="#FFF31010"/>
+        <Label x:Name="hrUnit1_Copy1" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="518,170,463,552" Foreground="#FFE82222"/>
+        <Label x:Name="oxiLabel1_Copy1" Content="OX : " FontWeight="Bold" Margin="549,171,432,550"/>
+        <Label x:Name="oxiValue1_Copy1" Content="--" FontWeight="Bold" Margin="579,171,408,550" Foreground="#FF43C114"/>
+        <Label x:Name="oxiSign1_Copy1" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="595,171,395,554" Foreground="#FF43C114" Width="26"/>
+        <Label x:Name="bpLabel1_Copy2" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="610,171,364,542"/>
+        <Label x:Name="bpSysValue1_Copy1" Content="--" FontWeight="Bold" Margin="638,172,337,541" Foreground="#FF1888E6"/>
+        <Label x:Name="bpDiaValue1_Copy1" Content="--" FontWeight="Bold" Margin="664,174,322,539" Foreground="#FF1888E6"/>
+        <Label x:Name="bpSysDivSymbol1_Copy1" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="653,170,337,553" Foreground="#FF1888E6"/>
+        <Label x:Name="hrValue1_Copy3" Content="--" FontWeight="Bold" Margin="713,172,274,548" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="bpLabel1_Copy3" Content="EPG:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="682,173,292,540"/>
+        <Label x:Name="hrLabel1_Copy2" Content="HR : " FontWeight="Bold" Margin="746,169,235,551"/>
+        <Label x:Name="hrValue1_Copy4" Content="--" FontWeight="Bold" Margin="776,170,211,550" BorderBrush="Black" Foreground="#FFF31010"/>
+        <Label x:Name="hrUnit1_Copy2" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="794,170,187,552" Foreground="#FFE82222"/>
+        <Label x:Name="oxiLabel1_Copy2" Content="OX : " FontWeight="Bold" Margin="825,171,156,550"/>
+        <Label x:Name="oxiValue1_Copy2" Content="--" FontWeight="Bold" Margin="855,171,132,550" Foreground="#FF43C114"/>
+        <Label x:Name="oxiSign1_Copy2" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="871,171,119,554" Foreground="#FF43C114" Width="26"/>
+        <Label x:Name="bpLabel1_Copy4" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="886,171,88,542"/>
+        <Label x:Name="bpSysValue1_Copy2" Content="--" FontWeight="Bold" Margin="914,172,61,541" Foreground="#FF1888E6"/>
+        <Label x:Name="bpDiaValue1_Copy2" Content="--" FontWeight="Bold" Margin="940,174,46,539" Foreground="#FF1888E6"/>
+        <Label x:Name="bpSysDivSymbol1_Copy2" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="929,170,61,553" Foreground="#FF1888E6"/>
+        <Label x:Name="hrValue1_Copy5" Content="--" FontWeight="Bold" Margin="989,172,-2,548" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="bpLabel1_Copy5" Content="EPG:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="958,173,16,540"/>
+        <Label x:Name="hrLabel1_Copy3" Content="HR : " FontWeight="Bold" Margin="746,369,235,351"/>
+        <Label x:Name="hrValue1_Copy6" Content="--" FontWeight="Bold" Margin="776,370,211,350" BorderBrush="Black" Foreground="#FFF31010"/>
+        <Label x:Name="hrUnit1_Copy3" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="794,370,187,352" Foreground="#FFE82222"/>
+        <Label x:Name="oxiLabel1_Copy3" Content="OX : " FontWeight="Bold" Margin="825,371,156,350"/>
+        <Label x:Name="oxiValue1_Copy3" Content="--" FontWeight="Bold" Margin="855,371,132,350" Foreground="#FF43C114"/>
+        <Label x:Name="oxiSign1_Copy3" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="871,371,119,354" Foreground="#FF43C114" Width="26"/>
+        <Label x:Name="bpLabel1_Copy6" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="886,371,88,342"/>
+        <Label x:Name="bpSysValue1_Copy3" Content="--" FontWeight="Bold" Margin="914,372,61,341" Foreground="#FF1888E6"/>
+        <Label x:Name="bpDiaValue1_Copy3" Content="--" FontWeight="Bold" Margin="940,374,46,339" Foreground="#FF1888E6"/>
+        <Label x:Name="bpSysDivSymbol1_Copy3" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="929,370,61,353" Foreground="#FF1888E6"/>
+        <Label x:Name="hrValue1_Copy7" Content="--" FontWeight="Bold" Margin="989,372,-2,348" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="bpLabel1_Copy7" Content="EPG:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="958,373,16,340"/>
+        <Label x:Name="hrLabel1_Copy4" Content="HR : " FontWeight="Bold" Margin="746,569,235,151"/>
+        <Label x:Name="hrValue1_Copy8" Content="--" FontWeight="Bold" Margin="776,570,211,150" BorderBrush="Black" Foreground="#FFF31010"/>
+        <Label x:Name="hrUnit1_Copy4" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="794,570,187,152" Foreground="#FFE82222"/>
+        <Label x:Name="oxiLabel1_Copy4" Content="OX : " FontWeight="Bold" Margin="825,571,156,150"/>
+        <Label x:Name="oxiValue1_Copy4" Content="--" FontWeight="Bold" Margin="855,571,132,150" Foreground="#FF43C114"/>
+        <Label x:Name="oxiSign1_Copy4" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="871,571,119,154" Foreground="#FF43C114" Width="26"/>
+        <Label x:Name="bpLabel1_Copy8" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="886,571,88,142"/>
+        <Label x:Name="bpSysValue1_Copy4" Content="--" FontWeight="Bold" Margin="914,572,61,141" Foreground="#FF1888E6"/>
+        <Label x:Name="bpDiaValue1_Copy4" Content="--" FontWeight="Bold" Margin="940,574,46,139" Foreground="#FF1888E6"/>
+        <Label x:Name="bpSysDivSymbol1_Copy4" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="929,570,61,153" Foreground="#FF1888E6"/>
+        <Label x:Name="hrValue1_Copy9" Content="--" FontWeight="Bold" Margin="989,572,-2,148" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="bpLabel1_Copy9" Content="EPG:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="958,573,16,140"/>
 
     </Grid>
 </Window>
