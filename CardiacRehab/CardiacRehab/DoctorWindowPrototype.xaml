@@ -1,7 +1,7 @@
 ﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0" x:Class="CardiacRehab.DoctorWindowPrototype"
+        xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="CardiacRehab.DoctorWindowPrototype"
         Title="DoctorWindowPrototype" Height="700" Width="1342.5">
     <Grid Height="674" Margin="0,0,0,-4" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1332">
         <Image x:Name="hrImage1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="15,279,1293,372"/>
@@ -69,22 +69,23 @@
         <Label x:Name="bpSysValue3" Content="--" FontWeight="Bold" Margin="1187,277,116,361" Foreground="#FF1888E6"/>
         <Label x:Name="bpDiaValue3" Content="--" FontWeight="Bold" Margin="1224,277,78,361" Foreground="#FF1888E6"/>
         <Label x:Name="bpSysDivSymbol3" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="1208,277,105,361" Foreground="#FF1888E6"/>
-        <Image x:Name="hrImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="899,608,409,43"/>
-        <Label x:Name="hrLabe6" Content="HR : " FontWeight="Bold" Margin="918,606,379,39"/>
-        <Label x:Name="hrValue6" Content="--" FontWeight="Bold" Margin="951,607,352,38" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit6" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="972,607,325,40" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel6" Content="OX : " FontWeight="Bold" Margin="1036,604,261,42"/>
-        <Image x:Name="oxiImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="1013,607,295,45"/>
-        <Label x:Name="oxiValue6" Content="--" FontWeight="Bold" Margin="1074,604,229,42" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign6" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="1093,606,213,44" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="1123,607,185,39"/>
-        <Label x:Name="bpLabel6" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="1150,604,147,34"/>
-        <Label x:Name="bpSysValue6" Content="--" FontWeight="Bold" Margin="1183,604,120,34" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue6" Content="--" FontWeight="Bold" Margin="1220,604,82,34" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol6" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="1208,604,105,34" Foreground="#FF1888E6"/>
-        <Grid HorizontalAlignment="Left" Height="238" Margin="452,28,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
+        <Image x:Name="hrImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="899,606,409,45"/>
+        <Label x:Name="hrLabe6" Content="HR : " FontWeight="Bold" Margin="918,604,379,41"/>
+        <Label x:Name="hrValue6" Content="--" FontWeight="Bold" Margin="951,605,352,40" BorderBrush="Black" Foreground="#FFF31010"/>
+        <Label x:Name="hrUnit6" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="972,605,325,42" Foreground="#FFE82222"/>
+        <Label x:Name="oxiLabel6" Content="OX : " FontWeight="Bold" Margin="1036,602,261,44"/>
+        <Image x:Name="oxiImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="1013,605,295,47"/>
+        <Label x:Name="oxiValue6" Content="--" FontWeight="Bold" Margin="1074,602,229,44" Foreground="#FF43C114"/>
+        <Label x:Name="oxiSign6" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="1093,604,213,46" Foreground="#FF43C114" Width="26"/>
+        <Image x:Name="bpImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="1123,605,185,41"/>
+        <Label x:Name="bpLabel6" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="1150,602,147,36"/>
+        <Label x:Name="bpSysValue6" Content="--" FontWeight="Bold" Margin="1183,602,120,36" Foreground="#FF1888E6"/>
+        <Label x:Name="bpDiaValue6" Content="--" FontWeight="Bold" Margin="1220,602,82,36" Foreground="#FF1888E6"/>
+        <Label x:Name="bpSysDivSymbol6" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="1208,602,105,36" Foreground="#FF1888E6"/>
+        <Grid x:Name="grid2" HorizontalAlignment="Left" Height="238" Margin="452,28,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
+            <Border x:Name="border2" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="307" Margin="-6,-5,-5,-64" VerticalAlignment="Top" Width="420"/>
             <Image x:Name="patientFrame2" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="connect2" Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
             <Button x:Name="expand2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
                 <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
             </Button>
@@ -94,21 +95,17 @@
             <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo2" Click="memo2_Click" Margin="358,18,14,182" Background="#FFE8DEDE">
                 <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
             </Button>
-            <d3:ChartPlotter x:Name="plotter_Copy" Margin="4,155,68,10">
-                <d3:ChartPlotter.HorizontalAxis>
-                    <d3:HorizontalAxis x:Name="dateAxis1" FontSize="7"/>
-                </d3:ChartPlotter.HorizontalAxis>
-                <d3:Header FontFamily="Microsoft Uighur"/>
-                <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
-                <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
-            </d3:ChartPlotter>
-            <Button x:Name="expand1_Copy1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,180,13,20" Background="#FFE8DEDE">
+            <Button x:Name="clientNote2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,180,13,20" Background="#FFE8DEDE">
                 <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
             </Button>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="73" Margin="4,155,0,0" VerticalAlignment="Top" Width="339">
+                <TextBox x:Name="textMessage" HorizontalAlignment="Left" Height="50" Margin="11,11,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="312"/>
+            </Border>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="238" Margin="891,28,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
+        <Grid x:Name="grid3" HorizontalAlignment="Left" Height="238" Margin="891,28,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
+            <Border x:Name="border3" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="307" Margin="-6,-5,-5,-64" VerticalAlignment="Top" Width="420"/>
             <Image x:Name="patientFrame3" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="connect3" Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
             <Button x:Name="expand3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
                 <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
             </Button>
@@ -126,13 +123,14 @@
                 <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
                 <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
             </d3:ChartPlotter>
-            <Button x:Name="expand1_Copy2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,184,13,16" Background="#FFE8DEDE">
+            <Button x:Name="clientNote3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,184,13,16" Background="#FFE8DEDE">
                 <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
             </Button>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="238" Margin="891,351,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
+        <Grid x:Name="grid6" HorizontalAlignment="Left" Height="238" Margin="891,349,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
+            <Border x:Name="border6" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="317" Margin="-6,-5,-5,-74" VerticalAlignment="Top" Width="420"/>
             <Image x:Name="patientFrame6" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="connect6" Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
             <Button x:Name="expand6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
                 <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
             </Button>
@@ -150,13 +148,14 @@
                 <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
                 <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
             </d3:ChartPlotter>
-            <Button x:Name="expand1_Copy5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,184,13,16" Background="#FFE8DEDE">
+            <Button x:Name="clientNote6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,184,13,16" Background="#FFE8DEDE">
                 <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
             </Button>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="238" Margin="452,351,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
+        <Grid x:Name="grid5" HorizontalAlignment="Left" Height="238" Margin="452,351,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
+            <Border x:Name="border5" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="317" Margin="-6,-5,-5,-76" VerticalAlignment="Top" Width="420"/>
             <Image x:Name="patientFrame5" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="connect5" Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
             <Button x:Name="expand5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
                 <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
             </Button>
@@ -174,13 +173,14 @@
                 <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
                 <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
             </d3:ChartPlotter>
-            <Button x:Name="expand1_Copy4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,182,13,18" Background="#FFE8DEDE">
+            <Button x:Name="clientNote5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,182,13,18" Background="#FFE8DEDE">
                 <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
             </Button>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="238" Margin="10,351,0,0" VerticalAlignment="Top" Width="410" Background="#FFE5EAF0">
+        <Grid x:Name="grid4" HorizontalAlignment="Left" Height="238" Margin="10,351,0,0" VerticalAlignment="Top" Width="410" Background="#FFE5EAF0">
+            <Border x:Name="border4" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="317" Margin="-6,-5,-4,-74" VerticalAlignment="Top" Width="420"/>
             <Image x:Name="patientFrame4" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="connect4" Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
             <Button x:Name="expand4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,14,70" Background="#FFE8DEDE">
                 <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
             </Button>
@@ -198,13 +198,14 @@
                 <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
                 <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
             </d3:ChartPlotter>
-            <Button x:Name="expand1_Copy3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,184,14,16" Background="#FFE8DEDE">
+            <Button x:Name="clientNote4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,184,14,16" Background="#FFE8DEDE">
                 <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
             </Button>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="238" Margin="10,28,0,0" VerticalAlignment="Top" Width="410" Background="#FFE5EAF0">
+        <Grid x:Name="grid1" HorizontalAlignment="Left" Height="238" Margin="10,28,0,0" VerticalAlignment="Top" Width="410" Background="#FFE5EAF0">
+            <Border x:Name="border1" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="307" Margin="-6,-5,-4,-64" VerticalAlignment="Top" Width="420"/>
             <Image x:Name="patientFrame1" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Button Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
+            <Button x:Name="connect1" Content="Connect" Height="57" Margin="36,43,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed" HorizontalAlignment="Left"/>
             <Button x:Name="mute1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,14,125" Background="#FFE8DEDE">
                 <Image x:Name="muteIcon1" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
             </Button>
@@ -222,7 +223,7 @@
                 <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
                 <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
             </d3:ChartPlotter>
-            <Button x:Name="expand1_Copy" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,182,14,18" Background="#FFE8DEDE">
+            <Button x:Name="clientNote1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,182,14,18" Background="#FFE8DEDE">
                 <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
             </Button>
         </Grid>
@@ -236,19 +237,19 @@
         <Label x:Name="hrValue1_Copy3" Content="--" FontWeight="Bold" Margin="368,604,935,41" BorderBrush="Black" Foreground="#FF0C0B0B"/>
         <Image HorizontalAlignment="Left" Height="20" Margin="811,606,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
         <Label x:Name="hrValue1_Copy4" Content="--" FontWeight="Bold" Margin="835,604,468,41" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Image HorizontalAlignment="Left" Height="20" Margin="1249,606,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
-        <Label x:Name="hrValue1_Copy5" Content="--" FontWeight="Bold" Margin="1269,604,34,41" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Label x:Name="uiLabel5" Content="Intensity : " FontWeight="Bold" Margin="15,305,1251,343" RenderTransformOrigin="4.143,2.379"/>
+        <Image HorizontalAlignment="Left" Height="20" Margin="1249,604,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
+        <Label x:Name="hrValue1_Copy5" Content="--" FontWeight="Bold" Margin="1269,602,34,43" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="uiLabel1" Content="Intensity : " FontWeight="Bold" Margin="15,305,1251,343" RenderTransformOrigin="4.143,2.379"/>
         <Label x:Name="uiValue5" Content="--" FontWeight="Bold" Margin="84,306,1198,342" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiLabel5_Copy" Content="Intensity : " FontWeight="Bold" Margin="457,305,809,343" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiValue5_Copy" Content="--" FontWeight="Bold" Margin="526,306,756,342" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiLabel5_Copy1" Content="Intensity : " FontWeight="Bold" Margin="893,305,373,343" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiValue5_Copy1" Content="--" FontWeight="Bold" Margin="962,306,320,342" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiLabel5_Copy2" Content="Intensity : " FontWeight="Bold" Margin="895,635,371,13" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiValue5_Copy2" Content="--" FontWeight="Bold" Margin="964,636,318,12" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiLabel5_Copy3" Content="Intensity : " FontWeight="Bold" Margin="457,635,809,13" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiValue5_Copy3" Content="--" FontWeight="Bold" Margin="526,636,756,12" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiLabel5_Copy4" Content="Intensity : " FontWeight="Bold" Margin="11,633,1255,15" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiValue5_Copy4" Content="--" FontWeight="Bold" Margin="80,634,1202,14" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiLabel2" Content="Intensity : " FontWeight="Bold" Margin="457,305,809,343" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue2" Content="--" FontWeight="Bold" Margin="526,306,756,342" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiLabel3" Content="Intensity : " FontWeight="Bold" Margin="893,305,373,343" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue3" Content="--" FontWeight="Bold" Margin="962,306,320,342" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiLabel6" Content="Intensity : " FontWeight="Bold" Margin="895,635,371,13" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue6" Content="--" FontWeight="Bold" Margin="964,636,318,12" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiLabel5" Content="Intensity : " FontWeight="Bold" Margin="457,635,809,13" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue1" Content="--" FontWeight="Bold" Margin="526,636,756,12" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiLabel4" Content="Intensity : " FontWeight="Bold" Margin="11,633,1255,15" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue4" Content="--" FontWeight="Bold" Margin="80,634,1202,14" RenderTransformOrigin="4.143,2.379"/>
     </Grid>
 </Window>

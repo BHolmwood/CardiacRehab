@@ -2,3 +2,4 @@
 
 1. Make size of doctor windows smaller
 2. create the full screen of doctor windows
+3. Enable doctor to be able to see himself

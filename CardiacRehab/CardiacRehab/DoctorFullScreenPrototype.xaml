@@ -19,9 +19,6 @@
                 <Button x:Name="expand1_Copy" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="688,188,15,131" Background="#FFE8DEDE">
                     <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
                 </Button>
-                <Button x:Name="expand1_Copy1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="688,248,15,71" Background="#FFE8DEDE">
-                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
-                </Button>
             </Grid>
         </Border>
         <Border x:Name="p2Border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="161" Margin="199,7,0,0" VerticalAlignment="Top" Width="237">
@@ -37,7 +34,7 @@
                 </d3:ChartPlotter>
                 <Image x:Name="patientFrame1" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="189"/>
                 <Button x:Name="expand1_Copy2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="200,20,9,110" Background="#FFE8DEDE">
-                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
+                    <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
                 </Button>
             </Grid>
         </Border>
@@ -54,7 +51,7 @@
                 </d3:ChartPlotter>
                 <Image x:Name="patientFrame1_Copy" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="189"/>
                 <Button x:Name="expand1_Copy3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="200,20,9,110" Background="#FFE8DEDE">
-                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
+                    <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
                 </Button>
             </Grid>
         </Border>
@@ -71,7 +68,7 @@
                 </d3:ChartPlotter>
                 <Image x:Name="patientFrame1_Copy1" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="189"/>
                 <Button x:Name="expand1_Copy4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="200,20,9,110" Background="#FFE8DEDE">
-                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
+                    <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
                 </Button>
             </Grid>
         </Border>
@@ -88,7 +85,7 @@
                 </d3:ChartPlotter>
                 <Image x:Name="patientFrame1_Copy2" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="189"/>
                 <Button x:Name="expand1_Copy5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="200,20,9,110" Background="#FFE8DEDE">
-                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
+                    <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
                 </Button>
             </Grid>
         </Border>
@@ -105,13 +102,13 @@
                 </d3:ChartPlotter>
                 <Image x:Name="patientFrame1_Copy3" HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="189"/>
                 <Button x:Name="expand1_Copy6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="200,20,9,110" Background="#FFE8DEDE">
-                    <Image Source="Resources/swap.png" Stretch="Uniform" Margin="5"/>
+                    <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
                 </Button>
             </Grid>
         </Border>
-        <Label x:Name="mainLabel" Content="MV:&#xD;&#xA;Patient 2" HorizontalAlignment="Left" Height="74" Margin="14,52,0,0" VerticalAlignment="Top" Width="165" FontSize="22"/>
+        <Label x:Name="mainLabel" Content="Main View:&#xD;&#xA;Patient 2" HorizontalAlignment="Left" Height="74" Margin="14,52,0,0" VerticalAlignment="Top" Width="165" FontSize="22"/>
 
-        <d3:ChartPlotter x:Name="ecgGraph" Margin="-1,620,0,2">
+        <d3:ChartPlotter x:Name="ecgGraph" Margin="-1,620,2,2">
             <d3:ChartPlotter.HorizontalAxis>
                 <d3:HorizontalAxis x:Name="dateAxis4" FontSize="7"/>
             </d3:ChartPlotter.HorizontalAxis>
@@ -133,7 +130,7 @@
         <Label x:Name="bpDiaValue1" Content="--" FontWeight="Bold" Margin="460,580,526,133" Foreground="#FF1888E6"/>
         <Label x:Name="bpSysDivSymbol1" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="445,580,545,143" Foreground="#FF1888E6"/>
         <Image x:Name="rpeImage" HorizontalAlignment="Left" Height="31" Margin="503,578,0,0" VerticalAlignment="Top" Width="32" OpacityMask="Black" Source="Resources/rpe.png"/>
-        <Label x:Name="rpeValue" Content="--" FontWeight="Bold" Margin="535,582,452,138" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="rpeValue1" Content="--" FontWeight="Bold" Margin="535,582,452,138" BorderBrush="Black" Foreground="#FF0C0B0B"/>
         <Label x:Name="hrLabel1_Copy" Content="HR : " FontWeight="Bold" Margin="186,169,795,551"/>
         <Label x:Name="hrValue1_Copy" Content="--" FontWeight="Bold" Margin="216,170,771,550" BorderBrush="Black" Foreground="#FFF31010"/>
         <Label x:Name="hrUnit1_Copy" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="234,170,747,552" Foreground="#FFE82222"/>
@@ -144,8 +141,8 @@
         <Label x:Name="bpSysValue1_Copy" Content="--" FontWeight="Bold" Margin="354,172,621,541" Foreground="#FF1888E6"/>
         <Label x:Name="bpDiaValue1_Copy" Content="--" FontWeight="Bold" Margin="380,174,606,539" Foreground="#FF1888E6"/>
         <Label x:Name="bpSysDivSymbol1_Copy" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="369,170,621,553" Foreground="#FF1888E6"/>
-        <Label x:Name="hrValue1_Copy1" Content="--" FontWeight="Bold" Margin="429,172,558,548" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Label x:Name="bpLabel1_Copy1" Content="EPG:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="398,173,576,540"/>
+        <Label x:Name="rpeValue2" Content="--" FontWeight="Bold" Margin="429,172,558,548" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="rpeLabel1" Content="RPE:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="398,173,576,540"/>
         <Label x:Name="hrLabel1_Copy1" Content="HR : " FontWeight="Bold" Margin="470,169,511,551"/>
         <Label x:Name="hrValue1_Copy2" Content="--" FontWeight="Bold" Margin="500,170,487,550" BorderBrush="Black" Foreground="#FFF31010"/>
         <Label x:Name="hrUnit1_Copy1" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="518,170,463,552" Foreground="#FFE82222"/>
@@ -156,8 +153,8 @@
         <Label x:Name="bpSysValue1_Copy1" Content="--" FontWeight="Bold" Margin="638,172,337,541" Foreground="#FF1888E6"/>
         <Label x:Name="bpDiaValue1_Copy1" Content="--" FontWeight="Bold" Margin="664,174,322,539" Foreground="#FF1888E6"/>
         <Label x:Name="bpSysDivSymbol1_Copy1" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="653,170,337,553" Foreground="#FF1888E6"/>
-        <Label x:Name="hrValue1_Copy3" Content="--" FontWeight="Bold" Margin="713,172,274,548" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Label x:Name="bpLabel1_Copy3" Content="EPG:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="682,173,292,540"/>
+        <Label x:Name="rpeValue3" Content="--" FontWeight="Bold" Margin="713,172,274,548" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="rpeLabel2" Content="RPE:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="682,173,292,540"/>
         <Label x:Name="hrLabel1_Copy2" Content="HR : " FontWeight="Bold" Margin="746,169,235,551"/>
         <Label x:Name="hrValue1_Copy4" Content="--" FontWeight="Bold" Margin="776,170,211,550" BorderBrush="Black" Foreground="#FFF31010"/>
         <Label x:Name="hrUnit1_Copy2" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="794,170,187,552" Foreground="#FFE82222"/>
@@ -168,8 +165,8 @@
         <Label x:Name="bpSysValue1_Copy2" Content="--" FontWeight="Bold" Margin="914,172,61,541" Foreground="#FF1888E6"/>
         <Label x:Name="bpDiaValue1_Copy2" Content="--" FontWeight="Bold" Margin="940,174,46,539" Foreground="#FF1888E6"/>
         <Label x:Name="bpSysDivSymbol1_Copy2" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="929,170,61,553" Foreground="#FF1888E6"/>
-        <Label x:Name="hrValue1_Copy5" Content="--" FontWeight="Bold" Margin="989,172,-2,548" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Label x:Name="bpLabel1_Copy5" Content="EPG:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="958,173,16,540"/>
+        <Label x:Name="rpeValue4" Content="--" FontWeight="Bold" Margin="989,172,-2,548" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="rpeLabel4" Content="RPE:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="958,173,16,540"/>
         <Label x:Name="hrLabel1_Copy3" Content="HR : " FontWeight="Bold" Margin="746,369,235,351"/>
         <Label x:Name="hrValue1_Copy6" Content="--" FontWeight="Bold" Margin="776,370,211,350" BorderBrush="Black" Foreground="#FFF31010"/>
         <Label x:Name="hrUnit1_Copy3" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="794,370,187,352" Foreground="#FFE82222"/>
@@ -180,8 +177,8 @@
         <Label x:Name="bpSysValue1_Copy3" Content="--" FontWeight="Bold" Margin="914,372,61,341" Foreground="#FF1888E6"/>
         <Label x:Name="bpDiaValue1_Copy3" Content="--" FontWeight="Bold" Margin="940,374,46,339" Foreground="#FF1888E6"/>
         <Label x:Name="bpSysDivSymbol1_Copy3" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="929,370,61,353" Foreground="#FF1888E6"/>
-        <Label x:Name="hrValue1_Copy7" Content="--" FontWeight="Bold" Margin="989,372,-2,348" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Label x:Name="bpLabel1_Copy7" Content="EPG:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="958,373,16,340"/>
+        <Label x:Name="rpeValue5" Content="--" FontWeight="Bold" Margin="989,372,-2,348" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="rpeLabel5" Content="RPE:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="958,373,16,340"/>
         <Label x:Name="hrLabel1_Copy4" Content="HR : " FontWeight="Bold" Margin="746,569,235,151"/>
         <Label x:Name="hrValue1_Copy8" Content="--" FontWeight="Bold" Margin="776,570,211,150" BorderBrush="Black" Foreground="#FFF31010"/>
         <Label x:Name="hrUnit1_Copy4" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="794,570,187,152" Foreground="#FFE82222"/>
@@ -192,8 +189,8 @@
         <Label x:Name="bpSysValue1_Copy4" Content="--" FontWeight="Bold" Margin="914,572,61,141" Foreground="#FF1888E6"/>
         <Label x:Name="bpDiaValue1_Copy4" Content="--" FontWeight="Bold" Margin="940,574,46,139" Foreground="#FF1888E6"/>
         <Label x:Name="bpSysDivSymbol1_Copy4" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="929,570,61,153" Foreground="#FF1888E6"/>
-        <Label x:Name="hrValue1_Copy9" Content="--" FontWeight="Bold" Margin="989,572,-2,148" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Label x:Name="bpLabel1_Copy9" Content="EPG:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="958,573,16,140"/>
+        <Label x:Name="rpeValue6" Content="--" FontWeight="Bold" Margin="989,572,-2,148" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="rpeLabel6" Content="RPE:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="958,573,16,140"/>
         <Label x:Name="uiLabel5_Copy3" Content="Intensity : " FontWeight="Bold" Margin="577,585,373,138" RenderTransformOrigin="4.143,2.379"/>
         <Label x:Name="uiValue5_Copy3" Content="--" FontWeight="Bold" Margin="646,586,320,137" RenderTransformOrigin="4.143,2.379"/>
 
