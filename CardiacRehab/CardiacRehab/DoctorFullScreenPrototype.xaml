@@ -194,6 +194,8 @@
         <Label x:Name="bpSysDivSymbol1_Copy4" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="929,570,61,153" Foreground="#FF1888E6"/>
         <Label x:Name="hrValue1_Copy9" Content="--" FontWeight="Bold" Margin="989,572,-2,148" BorderBrush="Black" Foreground="#FF0C0B0B"/>
         <Label x:Name="bpLabel1_Copy9" Content="EPG:" RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="958,573,16,140"/>
+        <Label x:Name="uiLabel5_Copy3" Content="Intensity : " FontWeight="Bold" Margin="577,585,373,138" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue5_Copy3" Content="--" FontWeight="Bold" Margin="646,586,320,137" RenderTransformOrigin="4.143,2.379"/>
 
     </Grid>
 </Window>

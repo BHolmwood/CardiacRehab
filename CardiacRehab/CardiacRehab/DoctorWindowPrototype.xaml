@@ -238,5 +238,17 @@
         <Label x:Name="hrValue1_Copy4" Content="--" FontWeight="Bold" Margin="835,604,468,41" BorderBrush="Black" Foreground="#FF0C0B0B"/>
         <Image HorizontalAlignment="Left" Height="20" Margin="1249,606,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
         <Label x:Name="hrValue1_Copy5" Content="--" FontWeight="Bold" Margin="1269,604,34,41" BorderBrush="Black" Foreground="#FF0C0B0B"/>
+        <Label x:Name="uiLabel5" Content="Intensity : " FontWeight="Bold" Margin="15,305,1251,343" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue5" Content="--" FontWeight="Bold" Margin="84,306,1198,342" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiLabel5_Copy" Content="Intensity : " FontWeight="Bold" Margin="457,305,809,343" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue5_Copy" Content="--" FontWeight="Bold" Margin="526,306,756,342" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiLabel5_Copy1" Content="Intensity : " FontWeight="Bold" Margin="893,305,373,343" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue5_Copy1" Content="--" FontWeight="Bold" Margin="962,306,320,342" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiLabel5_Copy2" Content="Intensity : " FontWeight="Bold" Margin="895,635,371,13" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue5_Copy2" Content="--" FontWeight="Bold" Margin="964,636,318,12" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiLabel5_Copy3" Content="Intensity : " FontWeight="Bold" Margin="457,635,809,13" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue5_Copy3" Content="--" FontWeight="Bold" Margin="526,636,756,12" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiLabel5_Copy4" Content="Intensity : " FontWeight="Bold" Margin="11,633,1255,15" RenderTransformOrigin="4.143,2.379"/>
+        <Label x:Name="uiValue5_Copy4" Content="--" FontWeight="Bold" Margin="80,634,1202,14" RenderTransformOrigin="4.143,2.379"/>
     </Grid>
 </Window>
