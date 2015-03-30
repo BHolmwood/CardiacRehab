@@ -201,12 +201,12 @@ namespace CardiacRehab
                     }
                     break;
                 case 5002:  // patient 1 intensity + blood pressure
-                    Console.WriteLine("bpui data: " + data);
-                    if (header == "UI")
+                    Console.WriteLine("bpui data: "+data);
+                    if(header == "UI")
                     {
                         UpdatePatientUI(processedString[1], uiValue1);
                     }
-                    else if (header == "BP")
+                    else if(header == "BP")
                     {
                         UpdatePatientBP(processedString[1], processedString[2], bpSysValue1, bpDiaValue1);
                     }
@@ -216,15 +216,15 @@ namespace CardiacRehab
                     break;
                 case 5004:  // patient 1 bike data
                     // not sure what to do with this info yet?
-                    if (header == "PW")
+                    if(header == "PW")
                     {
                         //Console.WriteLine(header);
                     }
-                    else if (header == "WR")
+                    else if(header == "WR")
                     {
-                        // Console.WriteLine(header);
+                       // Console.WriteLine(header);
                     }
-                    else if (header == "CR")
+                    else if(header == "CR")
                     {
                         //Console.WriteLine(header);
                     }
