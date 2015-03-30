@@ -101,7 +101,7 @@ namespace CardiacRehab
                     int len = d.GetChars(udpDataBuffer, 0, msgLen, chars, 0);
                     String tmp = new String(chars);
 
-                    //Console.WriteLine("received: " + tmp);
+                    Console.WriteLine("received: " + tmp);
 
                     window.ProcessBioSocketData(tmp, PortNumber);
                     InsertDataToDb(tmp);

@@ -7,6 +7,8 @@ api = Api(app)
 
 patient_contacts = {}
 doc_contacts = {}
+phone_contacts = {}
+pwd_infos = {}
 
 def flask_post_json():
     if (request.json != None):
@@ -19,51 +21,118 @@ def flask_post_json():
 class doctorContacts(Resource):
 	def get(self, clinician_id):
 		if(len(doc_contacts) != 0):
-			return {"address": doc_contacts["address"], "name": doc_contacts["name"], 
-			"id": doc_contacts["id"], "session": doc_contacts["session"], "assigned_index": doc_contacts["assigned_index"]}
+			if(clinician_id in doc_contacts):
+				return doc_contacts[clinician_id]
+			else:
+				return "no data"
 		else:
 			return "no data"
 	
 	def post(self, clinician_id):
 		data = flask_post_json()
-		doc_contacts["address"] = data['address']
-		doc_contacts["name"] = data["name"]
-		doc_contacts["id"] = data["id"]
-		doc_contacts["session"] = data["session"]
-		doc_contacts["assigned_index"] = data["assigned_index"]
-		
-		return {"address": data['address'], "name": data["name"], "id": data["id"],
+		doc_contact = {"address": data['address'], "name": data["name"], "id": data["id"],
 		"session": data["session"], "assigned_index": data["assigned_index"]}
+		doc_contacts[clinician_id] = doc_contact
+		return doc_contact, 201
 		
 	def delete(self, clinician_id):
-		doc_contacts.clear()
-		return "no data", 204
+		if(clinician_id in doc_contacts):
+			doc_contacts[clinician_id] = "no data"
+			return "no data", 204
+		else:
+			return "no data"
 		
 class patientContacts(Resource):
 	def get(self, clinician_id, patient_id):
 		if(len(patient_contacts) != 0):
-			return {"address": patient_contacts["address"], "name": patient_contacts["name"],
-			"id": patient_contacts["id"], "session": patient_contacts["session"], "assigned_index": patient_contacts["assigned_index"]}
+			if(clinician_id in patient_contacts):
+				if(patient_id in patient_contacts[clinician_id]):
+					return patient_contacts[clinician_id][patient_id]
+				else:
+					return "no data"
+			else:
+				return "no data"
 		else:
 			return "no data"
 	
 	def post(self, clinician_id, patient_id):
 		data = flask_post_json()
-		patient_contacts["address"] = data["address"]
-		patient_contacts["name"] = data["name"]
-		patient_contacts["id"] = data["id"]
-		patient_contacts["session"] = data["session"]
-		patient_contacts["assigned_index"] = data["assigned_index"]
-		
-		return {"address": data['address'], "name": data["name"], "id": data["id"],
+		patient_contact = {"address": data['address'], "name": data["name"], "id": data["id"],
 		"session": data["session"], "assigned_index": data["assigned_index"]}
+		temp = {patient_id: patient_contact}
+		patient_contacts[clinician_id] = temp
+		
+		return patient_contact, 201
 		
 	def delete(self, clinician_id, patient_id):
-		patient_contacts.clear()
-		return "no data", 204
+		if(clinician_id in patient_contacts):
+			if(patient_id in patient_contacts[clinician_id]):
+				patient_contacts[clinician_id][patient_id] = "no data"
+				return "no data", 204
+			else:
+				return "no data"
+		else:
+			return "no data"
+		
+class phoneContacts(Resource):
+	def get(self, macaddr):
+		if(len(phone_contacts) != 0):
+			if(macaddr in phone_contacts):
+				print phone_contacts
+				return phone_contacts[macaddr]
+			else:
+				return "no data"
+		else:
+			return "no data"
+			
+	def post(self, macaddr):
+		data = flask_post_json()
+		phone_contact = {"ssid": data['ssid'], "address": data['address']}
+		phone_contacts[macaddr] = phone_contact
+		return phone_contact, 201
+		
+	def delete(self, macaddr):
+		if(macaddr in phone_contacts):
+			phone_contacts[macaddr] = "no data"
+			return "no data", 204
+		else:
+			return "no data"
+		
+class securityContacts(Resource):
+	def get(self, rnd, macaddr):
+		if(len(pwd_infos) != 0):
+			if(rnd in pwd_infos):
+				if(macaddr in pwd_infos[rnd]):
+					return pwd_infos[rnd][macaddr]
+				else:
+					return "no data"
+			else:
+				return "no data"
+		else:
+			return "no data"
+			
+	def post(self, rnd, macaddr):
+		data = flask_post_json()
+		pwd_info = {"password": data['password']}
+		temp = {macaddr: pwd_info}
+		pwd_infos[rnd] = temp
+		return pwd_info, 201
+		
+	def delete(self, rnd, macaddr):
+		if(rnd in pwd_infos):
+			if(macaddr in pwd_infos[rnd]):
+				pwd_infos[rnd][macaddr] = "no data"
+				return "no data", 204
+			else:
+				return "no data"
+		else:
+			return "no data"
 
 api.add_resource(doctorContacts, '/doctors/<int:clinician_id>/')
 api.add_resource(patientContacts, '/doctors/<int:clinician_id>/patients/<int:patient_id>/')
+api.add_resource(phoneContacts, '/patientcmp/<string:macaddr>/')
+api.add_resource(securityContacts, '/<string:rnd>/<string:macaddr>/')
 
 if __name__ == '__main__':
-    app.run(host='192.168.184.33', port=5050)
+	app.debug = True
+	app.run(host='172.28.211.167', port=5050)

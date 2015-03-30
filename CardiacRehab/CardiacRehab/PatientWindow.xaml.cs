@@ -118,8 +118,8 @@ namespace CardiacRehab
         private void StartApplication()
         {
             // textbox in the UI for testing purposes
-            //_writer = new TextBoxStreamWriter(txtMessage);
-            //Console.SetOut(_writer);
+            _writer = new TextBoxStreamWriter(txtMessage);
+            Console.SetOut(_writer);
 
             //ihealth = new IHealthClass(patientIndex, this);
             //ihealth.GetCode();
@@ -135,7 +135,7 @@ namespace CardiacRehab
             //rotary_encoder = new PhidgetEncoder(3, this);
             //rotary_encoder.Initialize();
 
-            ConnectToDoctor();
+            //ConnectToDoctor();
 
             ////later will have different port for different devices 
             //Console.WriteLine("initializing 4444");
@@ -160,8 +160,8 @@ namespace CardiacRehab
             bikeSocket = new BioSocket(wirelessIP, 4447, patientIndex, user, sessionID, this);
             Thread bikeThread = new Thread(new ThreadStart(bikeSocket.InitializeBioSockets));
             bikeThread.Start();
-            bikeSocket.InitializeBioSockets();
-            Console.WriteLine ("DONE");
+            //bikeSocket.InitializeBioSockets();
+            Console.WriteLine("DONE");
 
             //Working for biodata + bike with UDP
             Console.WriteLine("connecting to: " + wirelessIP);
@@ -171,13 +171,13 @@ namespace CardiacRehab
             //bpUdpSocket.InitializeBioSockets();
             //ecgUdpSocket = new UdpBiosocket(wirelessIP, 4446, patientIndex, user, sessionID, this);
             //ecgUdpSocket.InitializeBioSockets();
-            bikeUdpSocket = new UdpBiosocket(wirelessIP, 4447, patientIndex, user, sessionID, this);
-            bikeUdpSocket.InitializeBioSockets();
+            //bikeUdpSocket = new UdpBiosocket(wirelessIP, 4447, patientIndex, user, sessionID, this);
+            //bikeUdpSocket.InitializeBioSockets();
 
 
             // Disable this function if testing with InitTimer()
             //InitMockBPTimer();
-            InitTimer();
+            //InitTimer();
         }
 
         #region VR code
