@@ -7,6 +7,10 @@
         Title="DoctorWindow" Height="780" Width="1024" WindowStartupLocation="CenterScreen"
         WindowState="Maximized">
     <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+<<<<<<< HEAD
+=======
+        <k:KinectSensorChooserUI HorizontalAlignment="Center" VerticalAlignment="Top" Name="sensorChooserUi" />
+>>>>>>> parent of a66e99a... Trying to make Intigration
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="62*"/>
