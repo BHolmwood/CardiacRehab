@@ -1,255 +1,340 @@
-﻿<Window
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Window x:Class="CardiacRehab.DoctorWindow"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="CardiacRehab.DoctorWindowPrototype"
-        Title="DoctorWindowPrototype" Height="700" Width="1342.5">
-    <Grid Height="674" Margin="0,0,0,-4" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1332">
-        <Image x:Name="hrImage1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="15,279,1293,372"/>
-        <Label x:Name="hrLabel1" Content="HR : " FontWeight="Bold" Margin="36,277,1261,368"/>
-        <Label x:Name="hrValue1" Content="--" FontWeight="Bold" Margin="68,278,1235,367" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit1" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="86,278,1211,369" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel1" Content="OX : " FontWeight="Bold" Margin="155,275,1142,371"/>
-        <Image x:Name="oxiImage1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="130,278,1178,374"/>
-        <Label x:Name="oxiValue1" Content="--" FontWeight="Bold" Margin="191,275,1112,371" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign1" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="211,277,1095,373" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="234,278,1074,368"/>
-        <Label x:Name="bpLabel1" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="260,275,1030,363"/>
-        <Label x:Name="bpSysValue1" Content="--" FontWeight="Bold" Margin="290,276,1001,362" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue1" Content="--" FontWeight="Bold" Margin="316,278,986,360" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol1" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="305,274,1001,374" Foreground="#FF1888E6"/>
-        <Image x:Name="hrImage2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="462,279,846,372"/>
-        <Label x:Name="hrLabel2" Content="HR : " FontWeight="Bold" Margin="482,277,815,368"/>
-        <Label x:Name="hrValue2" Content="--" FontWeight="Bold" Margin="513,278,790,367" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit2" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="530,278,767,369" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel2" Content="OX : " FontWeight="Bold" Margin="600,275,697,371"/>
-        <Image x:Name="oxiImage2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="574,278,734,374"/>
-        <Label x:Name="oxiValue2" Content="--" FontWeight="Bold" Margin="634,275,669,371" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign2" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="656,277,650,373" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="682,278,626,368"/>
-        <Label x:Name="bpLabel2" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="713,275,584,363"/>
-        <Label x:Name="bpSysValue2" Content="--" FontWeight="Bold" Margin="747,275,556,363" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue2" Content="--" FontWeight="Bold" Margin="783,275,519,363" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol2" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="767,275,546,363" Foreground="#FF1888E6"/>
-        <Image x:Name="hrImage4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="15,607,1293,44"/>
-        <Label x:Name="hrLabel4" Content="HR : " FontWeight="Bold" Margin="36,606,1261,39"/>
-        <Label x:Name="hrValue4" Content="--" FontWeight="Bold" Margin="68,605,1235,40" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit4" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="86,606,1211,41" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel4" Content="OX : " FontWeight="Bold" Margin="155,603,1142,43"/>
-        <Image x:Name="oxiImage4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="130,605,1178,47"/>
-        <Label x:Name="oxiValue4" Content="--" FontWeight="Bold" Margin="191,604,1112,42" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign4" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="211,606,1095,44" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="234,606,1074,40"/>
-        <Label x:Name="bpLabel4" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="263,603,1034,35"/>
-        <Label x:Name="bpSysValue4" Content="--" FontWeight="Bold" Margin="294,605,1009,33" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue4" Content="--" FontWeight="Bold" Margin="325,605,977,33" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol4" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="314,603,999,35" Foreground="#FF1888E6"/>
-        <Image x:Name="hrImage5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="462,607,846,44"/>
-        <Label x:Name="hrLabel5" Content="HR : " FontWeight="Bold" Margin="482,604,815,41"/>
-        <Label x:Name="hrValue5" Content="--" FontWeight="Bold" Margin="513,607,790,38" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit5" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="530,606,767,41" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel5" Content="OX : " FontWeight="Bold" Margin="603,604,694,42"/>
-        <Image x:Name="oxiImage5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="574,607,734,45"/>
-        <Label x:Name="oxiValue5" Content="--" FontWeight="Bold" Margin="641,605,662,41" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign5" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="661,607,645,43" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="688,604,620,42"/>
-        <Label x:Name="bpLabel5" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="716,603,581,35"/>
-        <Label x:Name="bpSysValue5" Content="--" FontWeight="Bold" Margin="746,603,557,35" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue5" Content="--" FontWeight="Bold" Margin="780,603,522,35" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol5" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="766,603,547,35" Foreground="#FF1888E6"/>
-        <Image x:Name="hrImage3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="897,281,411,370"/>
-        <Label x:Name="hrLabel3" Content="HR : " FontWeight="Bold" Margin="920,279,377,366"/>
-        <Label x:Name="hrValue3" Content="--" FontWeight="Bold" Margin="955,280,348,365" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit3" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="972,280,325,367" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel3" Content="OX : " FontWeight="Bold" Margin="1039,277,258,369"/>
-        <Image x:Name="oxiImage13" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="1013,280,295,372"/>
-        <Label x:Name="oxiValue3" Content="--" FontWeight="Bold" Margin="1074,277,229,369" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign3" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="1095,279,211,371" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="1119,280,189,366"/>
-        <Label x:Name="bpLabel3" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="1152,277,145,361"/>
-        <Label x:Name="bpSysValue3" Content="--" FontWeight="Bold" Margin="1187,277,116,361" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue3" Content="--" FontWeight="Bold" Margin="1224,277,78,361" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol3" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="1208,277,105,361" Foreground="#FF1888E6"/>
-        <Image x:Name="hrImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="899,606,409,45"/>
-        <Label x:Name="hrLabe6" Content="HR : " FontWeight="Bold" Margin="918,604,379,41"/>
-        <Label x:Name="hrValue6" Content="--" FontWeight="Bold" Margin="951,605,352,40" BorderBrush="Black" Foreground="#FFF31010"/>
-        <Label x:Name="hrUnit6" Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="972,605,325,42" Foreground="#FFE82222"/>
-        <Label x:Name="oxiLabel6" Content="OX : " FontWeight="Bold" Margin="1036,602,261,44"/>
-        <Image x:Name="oxiImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="1013,605,295,47"/>
-        <Label x:Name="oxiValue6" Content="--" FontWeight="Bold" Margin="1074,602,229,44" Foreground="#FF43C114"/>
-        <Label x:Name="oxiSign6" Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="1093,604,213,46" Foreground="#FF43C114" Width="26"/>
-        <Image x:Name="bpImage6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="1123,605,185,41"/>
-        <Label x:Name="bpLabel6" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="1150,602,147,36"/>
-        <Label x:Name="bpSysValue6" Content="--" FontWeight="Bold" Margin="1183,602,120,36" Foreground="#FF1888E6"/>
-        <Label x:Name="bpDiaValue6" Content="--" FontWeight="Bold" Margin="1220,602,82,36" Foreground="#FF1888E6"/>
-        <Label x:Name="bpSysDivSymbol6" Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="1208,602,105,36" Foreground="#FF1888E6"/>
-        <Grid x:Name="grid2" HorizontalAlignment="Left" Height="238" Margin="452,28,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
-            <Border x:Name="border2" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="307" Margin="-6,-5,-5,-64" VerticalAlignment="Top" Width="420"/>
-            <Image x:Name="patientFrame2" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Button x:Name="connect2" Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
-            <Button x:Name="expand2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
-                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <Button x:Name="mute2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,13,125" Background="#FFE8DEDE">
-                <Image x:Name="muteIcon2" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
-            </Button>
-            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo2" Click="memo2_Click" Margin="358,18,14,182" Background="#FFE8DEDE">
-                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <Button x:Name="clientNote2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,180,13,20" Background="#FFE8DEDE">
-                <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="73" Margin="4,155,0,0" VerticalAlignment="Top" Width="339">
-                <TextBox x:Name="textMessage" HorizontalAlignment="Left" Height="50" Margin="11,11,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="312"/>
+        xmlns:k="http://schemas.microsoft.com/kinect/2013"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+        xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0"
+        Title="DoctorWindow" Height="780" Width="1024" WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="62*"/>
+                <RowDefinition Height="63*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="340*"/>
+                <ColumnDefinition Width="333*"/>
+                <ColumnDefinition Width="343*"/>
+            </Grid.ColumnDefinitions>
+            <Border x:Name="border6" BorderBrush="#FF0A5B15" BorderThickness="5" HorizontalAlignment="Stretch" Margin="5,5,10,10" VerticalAlignment="Stretch" CornerRadius="5" Grid.Column="2" Grid.Row="1">
+                <Grid HorizontalAlignment="Stretch" Margin="5,5,0,0" VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="152*"/>
+                        <RowDefinition Height="29*"/>
+                        <RowDefinition Height="28*"/>
+                        <RowDefinition Height="36*"/>
+                        <RowDefinition Height="103*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="34*"/>
+                        <ColumnDefinition Width="37*"/>
+                        <ColumnDefinition Width="66*"/>
+                        <ColumnDefinition Width="29*"/>
+                        <ColumnDefinition Width="53*"/>
+                        <ColumnDefinition Width="43*"/>
+                        <ColumnDefinition Width="51*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="patientFrame6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="Uniform" Grid.ColumnSpan="7" Margin="5" Grid.RowSpan="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="5,3" Grid.Row="1"/>
+                    <Label x:Name="hrLabel6" Content="HR : " FontWeight="Bold" Grid.Row="1" Grid.Column="1" Margin="2,0,0,0"/>
+                    <Label x:Name="oxiLabel6" Content="OX : " FontWeight="Bold" Margin="2,0,0,0" Grid.Row="2" Grid.Column="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="5,3" Grid.Row="2"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="5,3,5,5" Grid.Row="3"/>
+                    <Label x:Name="bpLabel6" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="2,0,0,0" Grid.Row="3" Grid.Column="1"/>
+                    <Label x:Name="hrValue6" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="1" Grid.Column="2"/>
+                    <Label x:Name="oxiValue6" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="bpSysValue6" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="3" Grid.Column="2"/>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo6" Click="memo6_Click" Margin="13,9,2,10" Grid.Row="1" Grid.Column="4" Grid.RowSpan="2">
+                        <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+                    </Button>
+                    <Button x:Name="mute6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute6_Click" Margin="3,9,2,10" Grid.Row="1" Grid.Column="5" Grid.RowSpan="2">
+                        <Image x:Name="muteIcon6" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+                    </Button>
+                    <Button x:Name="expand6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand6_Click" Margin="3,9,10,10" Grid.Row="1" Grid.Column="6" Grid.RowSpan="2">
+                        <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5,9,5,5"/>
+                    </Button>
+                    <Border x:Name="EcgBorder6" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="7" Margin="5,5,9,5" Grid.Row="4"/>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="connect6" Content="Connect" Background="#FF0A5B15" Foreground="#FFF9F6F6" FontWeight="Bold" FontFamily="Century" FontSize="24" Grid.ColumnSpan="6" Margin="15,42,49,48" Grid.Column="1"/>
+                    <Image x:Name="hrWarning6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="1" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="oxiWarning6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/downarrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="2" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="bpWarning6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="3" Grid.Column="3" Visibility="Hidden"/>
+                    <Label Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="24,0,22,0" Grid.Row="3" Grid.Column="2"/>
+                    <Label x:Name="bpDiaValue6" Content="--" FontWeight="Bold" Margin="39,0,25,0" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Label Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="30,0,0,2" Grid.Row="1" Grid.Column="2"/>
+                    <Label Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="34,3,12,1" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="uiLabel6" Content="Intensity : " FontWeight="Bold" Grid.Row="3" Grid.Column="4" Margin="13,0,17,10" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2"/>
+                    <Label x:Name="uiValue6" Content="--" FontWeight="Bold" Grid.Row="3" Grid.Column="5" Margin="31,0,13,10" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2"/>
+
+                </Grid>
             </Border>
+            <Border x:Name="border5" BorderBrush="#FF0A5B15" BorderThickness="5" HorizontalAlignment="Stretch" Margin="5,5,5,10" VerticalAlignment="Stretch" CornerRadius="5" Grid.Column="1" Grid.Row="1">
+                <Grid HorizontalAlignment="Stretch" Margin="5,5,0,0" VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="152*"/>
+                        <RowDefinition Height="29*"/>
+                        <RowDefinition Height="28*"/>
+                        <RowDefinition Height="36*"/>
+                        <RowDefinition Height="103*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="34*"/>
+                        <ColumnDefinition Width="37*"/>
+                        <ColumnDefinition Width="66*"/>
+                        <ColumnDefinition Width="29*"/>
+                        <ColumnDefinition Width="53*"/>
+                        <ColumnDefinition Width="43*"/>
+                        <ColumnDefinition Width="51*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="patientFrame5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="Uniform" Grid.ColumnSpan="7" Margin="5" Grid.RowSpan="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="5,3" Grid.Row="1"/>
+                    <Label x:Name="hrLabel5" Content="HR : " FontWeight="Bold" Grid.Row="1" Grid.Column="1" Margin="2,0,0,0"/>
+                    <Label x:Name="oxiLabel5" Content="OX : " FontWeight="Bold" Margin="2,0,0,0" Grid.Row="2" Grid.Column="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="5,3" Grid.Row="2"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="5,3,5,5" Grid.Row="3"/>
+                    <Label x:Name="bpLabel5" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="2,0,0,0" Grid.Row="3" Grid.Column="1"/>
+                    <Label x:Name="hrValue5" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="1" Grid.Column="2"/>
+                    <Label x:Name="oxiValue5" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="bpSysValue5" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="3" Grid.Column="2"/>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo5" Click="memo5_Click" Margin="13,9,2,10" Grid.Row="1" Grid.Column="4" Grid.RowSpan="2">
+                        <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+                    </Button>
+                    <Button x:Name="mute5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute5_Click" Margin="3,9,2,10" Grid.Row="1" Grid.Column="5" Grid.RowSpan="2">
+                        <Image x:Name="muteIcon5" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+                    </Button>
+                    <Button x:Name="expand5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand5_Click" Margin="3,9,10,10" Grid.Row="1" Grid.Column="6" Grid.RowSpan="2">
+                        <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
+                    </Button>
+                    <Border x:Name="EcgBorder5" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="7" Margin="5,5,9,5" Grid.Row="4"/>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="connect5" Content="Connect" Background="#FF0A5B15" Foreground="#FFF9F6F6" FontWeight="Bold" FontFamily="Century" FontSize="24" Grid.ColumnSpan="6" Margin="15,42,49,48" Grid.Column="1"/>
+                    <Image x:Name="hrWarning5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="1" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="oxiWarning5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/downarrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="2" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="bpWarning5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="3" Grid.Column="3" Visibility="Hidden"/>
+                    <Label Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="24,0,22,0" Grid.Row="3" Grid.Column="2"/>
+                    <Label x:Name="bpDiaValue5" Content="--" FontWeight="Bold" Margin="39,0,25,0" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Label Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="30,0,0,2" Grid.Row="1" Grid.Column="2"/>
+                    <Label Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="34,3,12,1" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="uiLabel5" Content="Intensity : " FontWeight="Bold" Grid.Row="3" Grid.Column="4" Margin="13,0,15,10" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2"/>
+                    <Label x:Name="uiValue5" Content="--" FontWeight="Bold" Grid.Row="3" Grid.Column="5" Margin="32,3,10,7" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2"/>
+
+                </Grid>
+            </Border>
+            <Border x:Name="border4" BorderBrush="#FF0A5B15" BorderThickness="5" HorizontalAlignment="Stretch" Margin="5,5,5,10" VerticalAlignment="Stretch" CornerRadius="5" Grid.Row="1">
+                <Grid HorizontalAlignment="Stretch" Margin="5,5,0,0" VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="152*"/>
+                        <RowDefinition Height="29*"/>
+                        <RowDefinition Height="28*"/>
+                        <RowDefinition Height="36*"/>
+                        <RowDefinition Height="103*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="34*"/>
+                        <ColumnDefinition Width="37*"/>
+                        <ColumnDefinition Width="66*"/>
+                        <ColumnDefinition Width="29*"/>
+                        <ColumnDefinition Width="53*"/>
+                        <ColumnDefinition Width="43*"/>
+                        <ColumnDefinition Width="51*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="patientFrame4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="Uniform" Grid.ColumnSpan="7" Margin="5" Grid.RowSpan="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="5,3" Grid.Row="1"/>
+                    <Label x:Name="hrLabel4" Content="HR : " FontWeight="Bold" Grid.Row="1" Grid.Column="1" Margin="2,0,0,0"/>
+                    <Label x:Name="oxiLabel4" Content="OX : " FontWeight="Bold" Margin="2,0,0,0" Grid.Row="2" Grid.Column="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="5,3" Grid.Row="2"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="5,3,5,5" Grid.Row="3"/>
+                    <Label x:Name="bpLabel4" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="2,0,0,0" Grid.Row="3" Grid.Column="1"/>
+                    <Label x:Name="hrValue4" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="1" Grid.Column="2"/>
+                    <Label x:Name="oxiValue4" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="bpSysValue4" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="3" Grid.Column="2"/>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo4" Click="memo4_Click" Margin="13,9,2,10" Grid.Row="1" Grid.Column="4" Grid.RowSpan="2">
+                        <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+                    </Button>
+                    <Button x:Name="mute4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute4_Click" Margin="3,9,2,10" Grid.Row="1" Grid.Column="5" Grid.RowSpan="2">
+                        <Image x:Name="muteIcon4" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+                    </Button>
+                    <Button x:Name="expand4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand4_Click" Margin="3,9,10,10" Grid.Row="1" Grid.Column="6" Grid.RowSpan="2">
+                        <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
+                    </Button>
+                    <Border x:Name="EcgBorder4" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="7" Margin="5,5,9,5" Grid.Row="4"/>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="connect4" Content="Connect" Background="#FF0A5B15" Foreground="#FFF9F6F6" FontWeight="Bold" FontFamily="Century" FontSize="24" Grid.ColumnSpan="6" Margin="15,42,49,48" Grid.Column="1"/>
+                    <Image x:Name="hrWarning4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="1" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="oxiWarning4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/downarrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="2" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="bpWarning4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="3" Grid.Column="3" Visibility="Hidden"/>
+                    <Label Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="24,0,22,0" Grid.Row="3" Grid.Column="2"/>
+                    <Label x:Name="bpDiaValue4" Content="--" FontWeight="Bold" Margin="37,0,27,0" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Label Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="30,0,0,2" Grid.Row="1" Grid.Column="2"/>
+                    <Label Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="34,3,12,1" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="uiLabel4" Content="Intensity : " FontWeight="Bold" Grid.Row="3" Grid.Column="4" Margin="13,0,18,10" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2"/>
+                    <Label x:Name="uiValue4" Content="--" FontWeight="Bold" Grid.Row="3" Grid.Column="5" Margin="30,0,14,10" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2"/>
+
+                </Grid>
+            </Border>
+            <Border x:Name="border3" BorderBrush="#FF0A5B15" BorderThickness="5" HorizontalAlignment="Stretch" Margin="5,10,10,5" VerticalAlignment="Stretch" CornerRadius="5" Grid.Column="2">
+                <Grid HorizontalAlignment="Stretch" Margin="5,5,0,0" VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="152*"/>
+                        <RowDefinition Height="29*"/>
+                        <RowDefinition Height="28*"/>
+                        <RowDefinition Height="36*"/>
+                        <RowDefinition Height="103*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="34*"/>
+                        <ColumnDefinition Width="37*"/>
+                        <ColumnDefinition Width="66*"/>
+                        <ColumnDefinition Width="29*"/>
+                        <ColumnDefinition Width="53*"/>
+                        <ColumnDefinition Width="43*"/>
+                        <ColumnDefinition Width="51*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="patientFrame3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="Uniform" Grid.ColumnSpan="7" Margin="5" Grid.RowSpan="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="5,3" Grid.Row="1"/>
+                    <Label x:Name="hrLabel3" Content="HR : " FontWeight="Bold" Grid.Row="1" Grid.Column="1" Margin="2,0,0,0"/>
+                    <Label x:Name="oxiLabel3" Content="OX : " FontWeight="Bold" Margin="2,0,0,0" Grid.Row="2" Grid.Column="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="5,3" Grid.Row="2"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="5,3,5,5" Grid.Row="3"/>
+                    <Label x:Name="bpLabel3" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="2,0,0,0" Grid.Row="3" Grid.Column="1"/>
+                    <Label x:Name="hrValue3" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="1" Grid.Column="2"/>
+                    <Label x:Name="oxiValue3" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="bpSysValue3" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="3" Grid.Column="2"/>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo3" Click="memo3_Click" Margin="13,9,2,10" Grid.Row="1" Grid.Column="4" Grid.RowSpan="2">
+                        <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+                    </Button>
+                    <Button x:Name="mute3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute3_Click" Margin="3,9,2,10" Grid.Row="1" Grid.Column="5" Grid.RowSpan="2">
+                        <Image x:Name="muteIcon3" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+                    </Button>
+                    <Button x:Name="expand3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand3_Click" Margin="3,9,10,10" Grid.Row="1" Grid.Column="6" Grid.RowSpan="2">
+                        <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
+                    </Button>
+                    <Border x:Name="EcgBorder3" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="7" Margin="5,5,9,5" Grid.Row="4"/>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="connect3" Content="Connect" Background="#FF0A5B15" Foreground="#FFF9F6F6" FontWeight="Bold" FontFamily="Century" FontSize="24" Grid.ColumnSpan="6" Margin="15,42,49,48" Grid.Column="1"/>
+                    <Image x:Name="hrWarning3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="1" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="oxiWarning3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/downarrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="2" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="bpWarning3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="3" Grid.Column="3" Visibility="Hidden"/>
+                    <Label Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="24,0,22,0" Grid.Row="3" Grid.Column="2"/>
+                    <Label x:Name="bpDiaValue3" Content="--" FontWeight="Bold" Margin="39,0,25,0" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Label Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="30,0,0,2" Grid.Row="1" Grid.Column="2"/>
+                    <Label Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="34,3,12,1" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="uiLabel3" Content="Intensity : " FontWeight="Bold" Grid.Row="3" Grid.Column="4" Margin="10,0,20,10" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2"/>
+                    <Label x:Name="uiValue3" Content="--" FontWeight="Bold" Grid.Row="3" Grid.Column="5" Margin="0,0,16,10" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="50"/>
+
+                </Grid>
+            </Border>
+            <Border x:Name="border2" BorderBrush="#FF0A5B15" BorderThickness="5" HorizontalAlignment="Stretch" Margin="5,10,5,5" VerticalAlignment="Stretch" CornerRadius="5" Grid.Column="1">
+                <Grid HorizontalAlignment="Stretch" Margin="5,5,0,0" VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="152*"/>
+                        <RowDefinition Height="29*"/>
+                        <RowDefinition Height="28*"/>
+                        <RowDefinition Height="36*"/>
+                        <RowDefinition Height="103*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="34*"/>
+                        <ColumnDefinition Width="37*"/>
+                        <ColumnDefinition Width="66*"/>
+                        <ColumnDefinition Width="29*"/>
+                        <ColumnDefinition Width="53*"/>
+                        <ColumnDefinition Width="43*"/>
+                        <ColumnDefinition Width="51*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="patientFrame2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="Uniform" Grid.ColumnSpan="7" Margin="5" Grid.RowSpan="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="5,3" Grid.Row="1"/>
+                    <Label x:Name="hrLabel2" Content="HR : " FontWeight="Bold" Grid.Row="1" Grid.Column="1" Margin="2,0,0,0"/>
+                    <Label x:Name="oxiLabel2" Content="OX : " FontWeight="Bold" Margin="2,0,0,0" Grid.Row="2" Grid.Column="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="5,3" Grid.Row="2"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="5,3,5,5" Grid.Row="3"/>
+                    <Label x:Name="bpLabel2" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="2,0,0,0" Grid.Row="3" Grid.Column="1"/>
+                    <Label x:Name="hrValue2" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="1" Grid.Column="2"/>
+                    <Label x:Name="oxiValue2" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="bpSysValue2" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="3" Grid.Column="2"/>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo2" Click="memo2_Click" Margin="13,9,2,10" Grid.Row="1" Grid.Column="4" Grid.RowSpan="2">
+                        <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+                    </Button>
+                    <Button x:Name="mute2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute2_Click" Margin="3,9,2,10" Grid.Row="1" Grid.Column="5" Grid.RowSpan="2">
+                        <Image x:Name="muteIcon2" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+                    </Button>
+                    <Button x:Name="expand2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand2_Click" Margin="3,9,10,10" Grid.Row="1" Grid.Column="6" Grid.RowSpan="2">
+                        <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
+                    </Button>
+                    <Border x:Name="EcgBorder2" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="7" Margin="5,5,9,5" Grid.Row="4"/>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="connect2" Content="Connect" Background="#FF0A5B15" Foreground="#FFF9F6F6" FontWeight="Bold" FontFamily="Century" FontSize="24" Grid.ColumnSpan="6" Margin="15,42,49,48" Grid.Column="1" Click="connect2_Click"/>
+                    <Image x:Name="hrWarning2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="1" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="oxiWarning2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/downarrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="2" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="bpWarning2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="3" Grid.Column="3" Visibility="Hidden"/>
+                    <Label Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="24,0,22,0" Grid.Row="3" Grid.Column="2"/>
+                    <Label x:Name="bpDiaValue2" Content="--" FontWeight="Bold" Margin="39,0,25,0" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Label Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="30,0,0,2" Grid.Row="1" Grid.Column="2"/>
+                    <Label Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="34,3,12,1" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="uiLabel2" Content="Intensity : " FontWeight="Bold" Grid.Row="3" Grid.Column="4" Margin="13,0,15,10" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2"/>
+                    <Label x:Name="uiValue2" Content="--" FontWeight="Bold" Grid.Row="3" Grid.Column="5" Margin="0,3,10,7" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="50"/>
+                    <TextBox x:Name="textMessage" Grid.ColumnSpan="7" HorizontalAlignment="Left" Height="57" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="259" Margin="15,21,0,0" Grid.Row="4"/>
+
+                </Grid>
+            </Border>
+            <Border x:Name="border1" BorderBrush="#FF0A5B15" BorderThickness="5" HorizontalAlignment="Stretch" Margin="10,10,5,5" VerticalAlignment="Stretch" CornerRadius="5">
+                <Grid HorizontalAlignment="Stretch" Margin="5,5,0,0" VerticalAlignment="Stretch">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="152*"/>
+                        <RowDefinition Height="29*"/>
+                        <RowDefinition Height="28*"/>
+                        <RowDefinition Height="36*"/>
+                        <RowDefinition Height="103*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="34*"/>
+                        <ColumnDefinition Width="37*"/>
+                        <ColumnDefinition Width="66*"/>
+                        <ColumnDefinition Width="29*"/>
+                        <ColumnDefinition Width="53*"/>
+                        <ColumnDefinition Width="43*"/>
+                        <ColumnDefinition Width="51*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="patientFrame1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="Uniform" Grid.ColumnSpan="7" Margin="5" Grid.RowSpan="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/heart.png" Stretch="Uniform" Margin="5,3" Grid.Row="1"/>
+                    <Label x:Name="hrLabel1" Content="HR : " FontWeight="Bold" Grid.Row="1" Grid.Column="1" Margin="2,0,0,0"/>
+                    <Label x:Name="oxiLabel1" Content="OX : " FontWeight="Bold" Margin="2,0,0,0" Grid.Row="2" Grid.Column="1"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/oxygen.png" Stretch="Uniform" Margin="5,3" Grid.Row="2"/>
+                    <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/bp.png" Stretch="Uniform" Margin="5,3,5,5" Grid.Row="3"/>
+                    <Label x:Name="bpLabel1" Content="BP : " RenderTransformOrigin="0.545,0.231" FontWeight="Bold" Margin="2,0,0,0" Grid.Row="3" Grid.Column="1"/>
+                    <Label x:Name="hrValue1" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="1" Grid.Column="2"/>
+                    <Label x:Name="oxiValue1" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="bpSysValue1" Content="--" FontWeight="Bold" Margin="2,0,34,0" Grid.Row="3" Grid.Column="2"/>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo1" Click="memo1_Click" Margin="13,9,2,10" Grid.Row="1" Grid.Column="4" Grid.RowSpan="2">
+                        <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
+                    </Button>
+                    <Button x:Name="mute1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="3,9,2,10" Grid.Row="1" Grid.Column="5" Grid.RowSpan="2">
+                        <Image x:Name="muteIcon1" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
+                    </Button>
+                    <Button x:Name="expand1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="3,9,10,10" Grid.Row="1" Grid.Column="6" Grid.RowSpan="2">
+                        <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
+                    </Button>
+                    <Border x:Name="EcgBorder1" BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="7" Margin="5,5,9,5" Grid.Row="4">
+                        <d3:ChartPlotter x:Name="plotter" Margin="0,0,0,0">
+                            <d3:ChartPlotter.HorizontalAxis>
+                                <d3:HorizontalAxis x:Name="dateAxis" FontSize="7"/>
+                            </d3:ChartPlotter.HorizontalAxis>
+                            <d3:Header FontFamily="Microsoft Uighur"/>
+                            <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
+                            <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
+                        </d3:ChartPlotter>
+                    </Border>
+                    <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="connect1" Content="Connect" Background="#FF0A5B15" Foreground="#FFF9F6F6" FontWeight="Bold" FontFamily="Century" FontSize="24" Grid.ColumnSpan="6" Margin="15,42,49,48" Grid.Column="1" Click="connect1_Click"/>
+                    <Image x:Name="hrWarning1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="1" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="oxiWarning1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/downarrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="2" Grid.Column="3" Visibility="Hidden"/>
+                    <Image x:Name="bpWarning1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="Resources/uparrow.png" RenderTransformOrigin="0.227,0.062" Margin="2" Grid.Row="3" Grid.Column="3" Visibility="Hidden"/>
+                    <Label Content="/" FontWeight="Bold" RenderTransformOrigin="1.133,0.577" Margin="24,0,22,0" Grid.Row="3" Grid.Column="2"/>
+                    <Label x:Name="bpDiaValue1" Content="--" FontWeight="Bold" Margin="39,0,25,0" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Label Content="bpm" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="30,0,0,2" Grid.Row="1" Grid.Column="2"/>
+                    <Label Content="%" FontWeight="Bold" RenderTransformOrigin="-0.55,0.538" Margin="34,3,12,1" Grid.Row="2" Grid.Column="2"/>
+                    <Label x:Name="uiLabel1" Content="Intensity : " FontWeight="Bold" Grid.Row="3" Grid.Column="4" Margin="10,0,19,10" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2"/>
+                    <Label x:Name="uiValue1" Content="--" FontWeight="Bold" Grid.Row="3" Grid.Column="5" Margin="0,0,15,10" RenderTransformOrigin="4.143,2.379" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="50"/>
+
+                </Grid>
+            </Border>
+
         </Grid>
-        <Grid x:Name="grid3" HorizontalAlignment="Left" Height="238" Margin="891,28,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
-            <Border x:Name="border3" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="307" Margin="-6,-5,-5,-64" VerticalAlignment="Top" Width="420"/>
-            <Image x:Name="patientFrame3" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Button x:Name="connect3" Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
-            <Button x:Name="expand3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
-                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <Button x:Name="mute3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,13,125" Background="#FFE8DEDE">
-                <Image x:Name="muteIcon3" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
-            </Button>
-            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo3" Click="memo2_Click" Margin="358,18,14,182" Background="#FFE8DEDE">
-                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <d3:ChartPlotter x:Name="plotter_Copy1" Margin="4,155,68,10">
-                <d3:ChartPlotter.HorizontalAxis>
-                    <d3:HorizontalAxis x:Name="dateAxis2" FontSize="7"/>
-                </d3:ChartPlotter.HorizontalAxis>
-                <d3:Header FontFamily="Microsoft Uighur"/>
-                <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
-                <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
-            </d3:ChartPlotter>
-            <Button x:Name="clientNote3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,184,13,16" Background="#FFE8DEDE">
-                <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-        </Grid>
-        <Grid x:Name="grid6" HorizontalAlignment="Left" Height="238" Margin="891,349,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
-            <Border x:Name="border6" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="317" Margin="-6,-5,-5,-74" VerticalAlignment="Top" Width="420"/>
-            <Image x:Name="patientFrame6" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Button x:Name="connect6" Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
-            <Button x:Name="expand6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
-                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <Button x:Name="mute6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,13,125" Background="#FFE8DEDE">
-                <Image x:Name="muteIcon6" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
-            </Button>
-            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo6" Click="memo2_Click" Margin="358,18,14,182" Background="#FFE8DEDE">
-                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <d3:ChartPlotter x:Name="plotter_Copy4" Margin="4,155,68,10">
-                <d3:ChartPlotter.HorizontalAxis>
-                    <d3:HorizontalAxis x:Name="dateAxis5" FontSize="7"/>
-                </d3:ChartPlotter.HorizontalAxis>
-                <d3:Header FontFamily="Microsoft Uighur"/>
-                <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
-                <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
-            </d3:ChartPlotter>
-            <Button x:Name="clientNote6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,184,13,16" Background="#FFE8DEDE">
-                <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-        </Grid>
-        <Grid x:Name="grid5" HorizontalAlignment="Left" Height="238" Margin="452,351,0,0" VerticalAlignment="Top" Width="409" Background="#FFE5EAF0">
-            <Border x:Name="border5" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="317" Margin="-6,-5,-5,-76" VerticalAlignment="Top" Width="420"/>
-            <Image x:Name="patientFrame5" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Button x:Name="connect5" Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
-            <Button x:Name="expand5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,13,70" Background="#FFE8DEDE">
-                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <Button x:Name="mute5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,13,125" Background="#FFE8DEDE">
-                <Image x:Name="muteIcon5" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
-            </Button>
-            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo5" Click="memo2_Click" Margin="358,18,14,182" Background="#FFE8DEDE">
-                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <d3:ChartPlotter x:Name="plotter_Copy3" Margin="4,155,68,10">
-                <d3:ChartPlotter.HorizontalAxis>
-                    <d3:HorizontalAxis x:Name="dateAxis4" FontSize="7"/>
-                </d3:ChartPlotter.HorizontalAxis>
-                <d3:Header FontFamily="Microsoft Uighur"/>
-                <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
-                <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
-            </d3:ChartPlotter>
-            <Button x:Name="clientNote5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,182,13,18" Background="#FFE8DEDE">
-                <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-        </Grid>
-        <Grid x:Name="grid4" HorizontalAlignment="Left" Height="238" Margin="10,351,0,0" VerticalAlignment="Top" Width="410" Background="#FFE5EAF0">
-            <Border x:Name="border4" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="317" Margin="-6,-5,-4,-74" VerticalAlignment="Top" Width="420"/>
-            <Image x:Name="patientFrame4" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Button x:Name="connect4" Content="Connect" HorizontalAlignment="Left" Height="57" Margin="42,45,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed"/>
-            <Button x:Name="expand4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,14,70" Background="#FFE8DEDE">
-                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <Button x:Name="mute4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,14,125" Background="#FFE8DEDE">
-                <Image x:Name="muteIcon4" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
-            </Button>
-            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo4" Click="memo2_Click" Margin="358,18,15,182" Background="#FFE8DEDE">
-                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <d3:ChartPlotter x:Name="plotter_Copy2" Margin="4,155,69,10">
-                <d3:ChartPlotter.HorizontalAxis>
-                    <d3:HorizontalAxis x:Name="dateAxis3" FontSize="7"/>
-                </d3:ChartPlotter.HorizontalAxis>
-                <d3:Header FontFamily="Microsoft Uighur"/>
-                <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
-                <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
-            </d3:ChartPlotter>
-            <Button x:Name="clientNote4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,184,14,16" Background="#FFE8DEDE">
-                <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-        </Grid>
-        <Grid x:Name="grid1" HorizontalAlignment="Left" Height="238" Margin="10,28,0,0" VerticalAlignment="Top" Width="410" Background="#FFE5EAF0">
-            <Border x:Name="border1" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="307" Margin="-6,-5,-4,-64" VerticalAlignment="Top" Width="420"/>
-            <Image x:Name="patientFrame1" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
-            <Image HorizontalAlignment="Left" Height="20" Margin="337,253,0,-35" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
-            <Button x:Name="connect1" Content="Connect" Height="57" Margin="36,43,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed" HorizontalAlignment="Left"/>
-            <Button x:Name="mute1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,14,125" Background="#FFE8DEDE">
-                <Image x:Name="muteIcon1" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
-            </Button>
-            <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="memo1" Click="memo2_Click" Margin="358,18,15,182" Background="#FFE8DEDE">
-                <Image Source="Resources/note.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <Button x:Name="expand1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,130,14,70" Background="#FFE8DEDE">
-                <Image Source="Resources/expand.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-            <d3:ChartPlotter x:Name="plotter" Margin="4,155,69,10">
-                <d3:ChartPlotter.HorizontalAxis>
-                    <d3:HorizontalAxis x:Name="dateAxis" FontSize="7"/>
-                </d3:ChartPlotter.HorizontalAxis>
-                <d3:Header FontFamily="Microsoft Uighur"/>
-                <d3:VerticalAxisTitle FontFamily="Microsoft Uighur"/>
-                <d3:HorizontalAxisTitle FontFamily="Microsoft Uighur"/>
-            </d3:ChartPlotter>
-            <Button x:Name="clientNote1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="expand1_Click" Margin="358,182,14,18" Background="#FFE8DEDE">
-                <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
-            </Button>
-        </Grid>
-        <Label x:Name="hrValue1_Copy" Content="--" FontWeight="Bold" Margin="367,276,936,369" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Image HorizontalAlignment="Left" Height="20" Margin="811,279,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
-        <Label x:Name="hrValue1_Copy1" Content="--" FontWeight="Bold" Margin="835,277,468,368" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Image HorizontalAlignment="Left" Height="20" Margin="1251,279,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
-        <Label x:Name="hrValue1_Copy2" Content="--" FontWeight="Bold" Margin="1271,277,32,368" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Image HorizontalAlignment="Left" Height="20" Margin="346,607,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
-        <Label x:Name="hrValue1_Copy3" Content="--" FontWeight="Bold" Margin="368,604,935,41" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Image HorizontalAlignment="Left" Height="20" Margin="811,606,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
-        <Label x:Name="hrValue1_Copy4" Content="--" FontWeight="Bold" Margin="835,604,468,41" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Image HorizontalAlignment="Left" Height="20" Margin="1249,604,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
-        <Label x:Name="hrValue1_Copy5" Content="--" FontWeight="Bold" Margin="1269,602,34,43" BorderBrush="Black" Foreground="#FF0C0B0B"/>
-        <Label x:Name="uiLabel1" Content="Intensity : " FontWeight="Bold" Margin="15,305,1251,343" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiValue5" Content="--" FontWeight="Bold" Margin="84,306,1198,342" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiLabel2" Content="Intensity : " FontWeight="Bold" Margin="457,305,809,343" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiValue2" Content="--" FontWeight="Bold" Margin="526,306,756,342" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiLabel3" Content="Intensity : " FontWeight="Bold" Margin="893,305,373,343" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiValue3" Content="--" FontWeight="Bold" Margin="962,306,320,342" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiLabel6" Content="Intensity : " FontWeight="Bold" Margin="895,635,371,13" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiValue6" Content="--" FontWeight="Bold" Margin="964,636,318,12" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiLabel5" Content="Intensity : " FontWeight="Bold" Margin="457,635,809,13" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiValue1" Content="--" FontWeight="Bold" Margin="526,636,756,12" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiLabel4" Content="Intensity : " FontWeight="Bold" Margin="11,633,1255,15" RenderTransformOrigin="4.143,2.379"/>
-        <Label x:Name="uiValue4" Content="--" FontWeight="Bold" Margin="80,634,1202,14" RenderTransformOrigin="4.143,2.379"/>
+
     </Grid>
 </Window>

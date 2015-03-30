@@ -88,15 +88,8 @@
     </ApplicationDefinition>
     <Compile Include="BioSocket.cs" />
     <Compile Include="ClinicianSockets.cs" />
-    <Compile Include="DoctorFullScreenPrototype.xaml.cs">
-      <DependentUpon>DoctorFullScreenPrototype.xaml</DependentUpon>
-    </Compile>
     <Compile Include="DoctorWindow.xaml.cs">
       <DependentUpon>DoctorWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DoctorWindowPrototype.xaml.cs">
-      <DependentUpon>DoctorWindowPrototype.xaml</DependentUpon>
     </Compile>
     <Compile Include="FullScreenWindow.xaml.cs">
       <DependentUpon>FullScreenWindow.xaml</DependentUpon>
@@ -114,15 +107,7 @@
     <Compile Include="UdpBiosocket.cs" />
     <Compile Include="UdpBiosocketClient.cs" />
     <Compile Include="UnitySocket.cs" />
-    <Page Include="DoctorFullScreenPrototype.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="DoctorWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="DoctorWindowPrototype.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
