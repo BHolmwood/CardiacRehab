@@ -205,6 +205,7 @@
         <Grid x:Name="grid1" HorizontalAlignment="Left" Height="238" Margin="10,28,0,0" VerticalAlignment="Top" Width="410" Background="#FFE5EAF0">
             <Border x:Name="border1" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="307" Margin="-6,-5,-4,-64" VerticalAlignment="Top" Width="420"/>
             <Image x:Name="patientFrame1" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="340"/>
+            <Image HorizontalAlignment="Left" Height="20" Margin="337,253,0,-35" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
             <Button x:Name="connect1" Content="Connect" Height="57" Margin="36,43,0,0" VerticalAlignment="Top" Width="131" Background="#FFE8DEDE" FontSize="22" FontFamily="Simplified Arabic Fixed" HorizontalAlignment="Left"/>
             <Button x:Name="mute1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="mute1_Click" Margin="358,75,14,125" Background="#FFE8DEDE">
                 <Image x:Name="muteIcon1" Source="Resources/mic.png" Stretch="Uniform" Margin="3"/>
@@ -227,7 +228,6 @@
                 <Image Source="Resources/notepad.png" Stretch="Uniform" Margin="5"/>
             </Button>
         </Grid>
-        <Image HorizontalAlignment="Left" Height="20" Margin="345,279,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
         <Label x:Name="hrValue1_Copy" Content="--" FontWeight="Bold" Margin="367,276,936,369" BorderBrush="Black" Foreground="#FF0C0B0B"/>
         <Image HorizontalAlignment="Left" Height="20" Margin="811,279,0,0" VerticalAlignment="Top" Width="23" OpacityMask="Black" Source="Resources/rpe.png"/>
         <Label x:Name="hrValue1_Copy1" Content="--" FontWeight="Bold" Margin="835,277,468,368" BorderBrush="Black" Foreground="#FF0C0B0B"/>
