@@ -71,6 +71,14 @@ namespace CardiacRehab
         //ClinicianSockets patient6ecg;
         //ClinicianSockets patient6bike;
 
+        // for kinect
+        private WriteableBitmap outputImage;
+        private byte[] pixels = new byte[0];
+
+        private KinectSensorChooser sensorChooser;
+        private ColorListener _videoListener;
+        private ColorClient _videoClient;
+
         WaveOut wo = new WaveOut();
         WaveFormat wf = new WaveFormat(16000, 1);
         BufferedWaveProvider mybufferwp = null;
@@ -88,6 +96,8 @@ namespace CardiacRehab
             InitializeComponent();
             GetLocalIP();
             InitializeAllPatientSockets();
+
+            InitializeKinect();
 
             _writer = new TextBoxStreamWriter(textMessage);
             Console.SetOut(_writer);
@@ -438,7 +448,14 @@ namespace CardiacRehab
         #region Connect button triggers
         private void connect1_Click(object sender, RoutedEventArgs e)
         {
-
+            if (sensorChooser.Kinect != null)
+            {
+                if (!_videoClient.IsConnected)
+                {
+                    _videoClient.Connect("192.168.184.18", 6001);
+                }
+            }
+            connect1.Visibility = System.Windows.Visibility.Hidden;
         }
 
         private void connect2_Click(object sender, RoutedEventArgs e)
@@ -543,6 +560,138 @@ namespace CardiacRehab
         }
 
 
+        #endregion
+
+        #region Kinect
+        private void InitializeKinect()
+        {
+            this.sensorChooser = new KinectSensorChooser();
+            this.sensorChooser.KinectChanged += sensorChooser_KinectChanged;
+            this.sensorChooserUi.KinectSensorChooser = this.sensorChooser;
+            this.sensorChooser.Start();
+
+            // Don't try this unless there is a kinect
+            if (this.sensorChooser.Kinect != null)
+            {
+                try
+                {
+                    // Streaming video out on port 4555
+                    _videoListener = new ColorListener(this.sensorChooser.Kinect, 5001, ImageFormat.Jpeg);
+                    _videoListener.Start();
+
+                    _videoClient = new ColorClient();
+                    _videoClient.ColorFrameReady += _videoClient_ColorFrameReady;
+                    _videoClient.Connect("192.168.184.33", 4555);
+
+                    //_audioClient = new AudioClient();
+                    //_audioClient.AudioFrameReady += _audioClient_AudioFrameReady;
+                    //_audioClient.Connect(doctorIp, 4541 + patientIndex - 1);
+
+                    ////for sending audio
+                    //_audioListener = new AudioListener(this.sensorChooser.Kinect, 4565 + patientIndex - 1);
+                    //_audioListener.Start();
+
+                }
+                catch (SocketException ex)
+                {
+                    Console.WriteLine("Kinect socket exception");
+                    Console.WriteLine("Exception code {0} with message: {1}", ex.ErrorCode, ex.Message);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Kinect other exception");
+                    Console.WriteLine("Exception with message: {0}", e.Message);
+                }
+            }
+
+        }
+
+        void _videoClient_ColorFrameReady(object sender, ColorFrameReadyEventArgs e)
+        {
+            if (e.ColorFrame.BitmapImage != null)
+            {
+                this.patientFrame1.Source = e.ColorFrame.BitmapImage;
+                e.ColorFrame.BitmapImage = null;
+                GC.Collect();
+            }
+            else
+            {
+                Console.WriteLine("bitmapimage is null");
+            }
+        }
+
+        ///// <summary>
+        ///// Called when the KinectSensorChooser gets a new sensor
+        ///// </summary>
+        ///// <param name="sender">sender of the event</param>
+        ///// <param name="e">event arguments</param>
+        void sensorChooser_KinectChanged(object sender, KinectChangedEventArgs e)
+        {
+            if (e.OldSensor != null)
+            {
+                try
+                {
+                    Console.WriteLine("oldsensor...disabling color stream...");
+                    e.OldSensor.ColorStream.Disable();
+                }
+                catch (InvalidOperationException ex)
+                {
+                    Console.WriteLine("InvalidOperationException 1: " + ex.Message);
+                    // KinectSensor might enter an invalid state while enabling/disabling streams or stream features.
+                    // E.g.: sensor might be abruptly unplugged.
+
+                }
+            }
+
+            if (e.NewSensor != null)
+            {
+                try
+                {
+                    e.NewSensor.ColorStream.Enable(ColorImageFormat.RgbResolution640x480Fps30);
+                    //e.NewSensor.ColorFrameReady += NewSensor_ColorFrameReady;
+
+                }
+                catch (InvalidOperationException ex)
+                {
+                    Console.WriteLine("InvalidOperationException 2: " + ex.Message);
+                    // KinectSensor might enter an invalid state while enabling/disabling streams or stream features.
+                    // E.g.: sensor might be abruptly unplugged.
+                }
+            }
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            _videoListener.Stop();
+            _videoClient.Disconnect();
+        }
+
+
+        //void NewSensor_ColorFrameReady(object sender, ColorImageFrameReadyEventArgs e)
+        //{
+        //    using (ColorImageFrame frame = e.OpenColorImageFrame())
+        //    {
+        //        if (frame == null)
+        //        {
+        //            if (pixels.Length == 0)
+        //            {
+        //                this.pixels = new byte[frame.PixelDataLength];
+        //            }
+        //            frame.CopyPixelDataTo(this.pixels);
+
+        //            outputImage = new WriteableBitmap(frame.Width, frame.Height, 96, 96, PixelFormats.Bgr32, null);
+
+        //            outputImage.WritePixels(
+        //                new Int32Rect(0, 0, frame.Width, frame.Height), this.pixels, frame.Width * 4, 0);
+
+        //            this.patientFrame1.Source = outputImage;
+
+        //            // force the garbase collector to remove outputImage --> otherwise, causes mem leak
+        //            outputImage = null;
+        //            GC.Collect();
+        //        }
+        //    };
+        //}
         #endregion
 
     }
