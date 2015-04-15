@@ -38,7 +38,7 @@ namespace CardiacRehab
         private DispatcherTimer getPatientTimer;
         private ContactInfo patientData;
         private List<ContactInfo> connected_patients = null;
-        private String hosturl = "http://172.28.223.192:5050/doctors/";
+        private String hosturl = "http://172.28.222.126:5050/doctors/";
 
 
         public PatientList(int dbId)

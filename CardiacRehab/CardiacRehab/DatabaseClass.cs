@@ -26,7 +26,7 @@ namespace CardiacRehab
         /// </summary>
         private void InitializeDB()
         {
-            db_server = "172.28.223.192";
+            db_server = "172.28.222.126";
             db_name = "cardiac";
             db_username = "root";
             db_password = "";
